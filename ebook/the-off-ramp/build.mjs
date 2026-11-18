@@ -5,6 +5,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import * as C from './content.mjs';
+import { coverArt } from './cover-art.mjs';
 
 const require = createRequire(import.meta.url);
 const here = dirname(fileURLToPath(import.meta.url));
@@ -27,21 +28,18 @@ const logTable = (cols, n) =>
   `<table class="grid log"><thead><tr>${cols.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${Array.from({ length: n }, () => `<tr>${cols.map(() => '<td></td>').join('')}</tr>`).join('')}</tbody></table>`;
 
 // ---------- cover ----------
-const rampSvg = `
-<svg class="ramp" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <path d="M0 30 C 170 30, 230 215, 420 215 L 600 215" fill="none" stroke="#c8593c" stroke-width="10" stroke-linecap="round"/>
-  <path d="M0 60 C 160 60, 220 240, 420 240 L 600 240" fill="none" stroke="#1f4e5a" stroke-width="3" stroke-linecap="round" opacity=".55"/>
-  <circle cx="420" cy="215" r="13" fill="#1f4e5a"/>
-</svg>`;
 add(
   `<div class="cover">
-    <div class="cover-for">${esc(C.meta.forWho)}</div>
-    <div class="cover-title">${esc(C.meta.title)}</div>
-    <div class="cover-sub">${esc(C.meta.subtitle)}</div>
-    ${rampSvg}
+    <div class="cover-kick">A 90-day workbook</div>
+    <div class="cover-title">The<br>Off-Ramp</div>
+    <div class="cover-sub">The 90-Day Plan for Keeping Your<br>Results After GLP-1s</div>
     <div class="cover-promise">${esc(C.meta.promise)}</div>
-    <div class="cover-catch">${esc(C.meta.catchphrase)}</div>
-    <div class="cover-by">${esc(C.meta.byline)}</div>
+    <div class="cover-art">${coverArt({ id: 'pdf' })}</div><div class="cover-fade"></div>
+    <div class="cover-band">
+      <div class="cover-badge">12 weekly plans · 10 food-noise cards · 5 bonuses</div>
+      <div class="cover-catch">${esc(C.meta.catchphrase)}</div>
+      <div class="cover-by">${esc(C.meta.forWho)}</div>
+    </div>
   </div>`,
   [],
   { cls: 'cover-page', noFooter: true },
@@ -341,15 +339,19 @@ strong { color: var(--ink); }
 .signoff { font-style: italic; color: var(--teal); font-size: 13pt !important; margin-top: 12pt; }
 .box { display:inline-block; width:12pt; height:12pt; border:0.9pt solid var(--teal); border-radius:2pt; vertical-align:middle; background:#fff; }
 /* cover */
-.cover-page .frame { border-width: 1.5pt; background: var(--sand); }
-.cover { height:100%; display:flex; flex-direction:column; padding-top: 0.4in; }
-.cover-for { font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); max-width:5.2in; line-height:1.5; }
-.cover-title { font-size: 60pt; font-weight:700; color:var(--teal); line-height:1; margin-top: 0.45in; letter-spacing:-.01em; }
-.cover-sub { font-size: 18pt; color:var(--ink); margin-top: 12pt; max-width: 5.6in; line-height:1.25; }
-.ramp { width: 100%; height: auto; margin: 0.5in 0 0.35in; }
-.cover-promise { font-size: 15pt; font-style: italic; color: var(--ink); max-width: 5.6in; line-height: 1.35; }
-.cover-catch { font-family:Inter, sans-serif; font-weight:600; color: var(--coral); font-size: 11pt; letter-spacing:.08em; text-transform:uppercase; margin-top: 16pt; }
-.cover-by { margin-top:auto; font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; }
+.cover-page .frame { inset: 0; border: none; padding: 0; background: var(--sand); }
+.cover { position: relative; height: 100%; }
+.cover-kick { position:absolute; left:0.85in; top:0.85in; font-family:Inter, sans-serif; font-weight:600; font-size:10pt; letter-spacing:.2em; text-transform:uppercase; color:var(--coral); }
+.cover-title { position:absolute; left:0.8in; top:1.12in; font-size:72pt; font-weight:700; color:var(--teal); line-height:.95; letter-spacing:-.01em; }
+.cover-sub { position:absolute; left:0.85in; top:3.22in; width:6.4in; font-size:22pt; line-height:1.2; color:var(--ink); }
+.cover-promise { position:absolute; left:0.85in; top:4.12in; width:6in; font-size:13pt; font-style:italic; color:var(--muted); }
+.cover-art { position:absolute; left:0; right:0; bottom:1.55in; height:4.75in; }
+.cover-fade { position:absolute; left:0; right:0; bottom:5.2in; height:1.1in; background:linear-gradient(180deg,var(--sand),rgba(245,239,230,0)); }
+.cover-art svg { width:100%; height:100%; display:block; }
+.cover-band { position:absolute; left:0; right:0; bottom:0; height:1.57in; background:var(--teal); padding:0.32in 0.85in 0; }
+.cover-badge { font-family:Inter, sans-serif; font-size:10pt; letter-spacing:.06em; color:#cfe0e3; }
+.cover-catch { font-family:Inter, sans-serif; font-weight:600; font-size:13pt; letter-spacing:.16em; text-transform:uppercase; color:#f2b8a6; margin-top:7pt; }
+.cover-by { font-family:Inter, sans-serif; font-size:7.5pt; letter-spacing:.12em; text-transform:uppercase; color:#9fbcc1; margin-top:12pt; }
 /* toc */
 .toc-row { display:flex; align-items:baseline; gap:6pt; font-size: 9.8pt; padding: 1.1pt 0; }
 .toc-row.lvl0 { font-family: Inter, sans-serif; font-weight:600; color: var(--teal); font-size: 9pt; letter-spacing:.06em; text-transform: uppercase; margin-top: 7pt; }

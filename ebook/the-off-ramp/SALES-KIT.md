@@ -54,6 +54,6 @@ The Ahrefs and Similarweb connectors failed to connect in this session, so these
 
 ## Next upgrade
 
-1. A designed cover image (photo or illustration) for marketplace thumbnails. The current cover is typographic.
+1. Done: cover images are in `dist/covers/`. Use `cover-1600x2560.png` for Amazon KDP, Apple Books and Payhip, `square-1080.png` for Gumroad and Etsy thumbnails and Instagram, and `banner-1280x720.png` for the Gumroad cover and link previews. Rebuild them with `node cover.mjs`.
 2. Rewrite the hooks with the verbatim X phrasing Grok Bot collects (task on the crosswalk board).
 3. A clinician or registered dietitian review pass before you scale traffic. It also adds credibility to the cover.

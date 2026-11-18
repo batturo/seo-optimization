@@ -28,15 +28,19 @@ strong { color: var(--ink); }
 .signoff { font-style: italic; color: var(--teal); font-size: 13pt !important; margin-top: 12pt; }
 .box { display:inline-block; width:12pt; height:12pt; border:0.9pt solid var(--teal); border-radius:2pt; vertical-align:middle; background:#fff; }
 /* cover */
-.cover-page .frame { border-width: 1.5pt; background: var(--sand); }
-.cover { height:100%; display:flex; flex-direction:column; padding-top: 0.4in; }
-.cover-for { font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); max-width:5.2in; line-height:1.5; }
-.cover-title { font-size: 60pt; font-weight:700; color:var(--teal); line-height:1; margin-top: 0.45in; letter-spacing:-.01em; }
-.cover-sub { font-size: 18pt; color:var(--ink); margin-top: 12pt; max-width: 5.6in; line-height:1.25; }
-.ramp { width: 100%; height: auto; margin: 0.5in 0 0.35in; }
-.cover-promise { font-size: 15pt; font-style: italic; color: var(--ink); max-width: 5.6in; line-height: 1.35; }
-.cover-catch { font-family:Inter, sans-serif; font-weight:600; color: var(--coral); font-size: 11pt; letter-spacing:.08em; text-transform:uppercase; margin-top: 16pt; }
-.cover-by { margin-top:auto; font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; }
+.cover-page .frame { inset: 0; border: none; padding: 0; background: var(--sand); }
+.cover { position: relative; height: 100%; }
+.cover-kick { position:absolute; left:0.85in; top:0.85in; font-family:Inter, sans-serif; font-weight:600; font-size:10pt; letter-spacing:.2em; text-transform:uppercase; color:var(--coral); }
+.cover-title { position:absolute; left:0.8in; top:1.12in; font-size:72pt; font-weight:700; color:var(--teal); line-height:.95; letter-spacing:-.01em; }
+.cover-sub { position:absolute; left:0.85in; top:3.22in; width:6.4in; font-size:22pt; line-height:1.2; color:var(--ink); }
+.cover-promise { position:absolute; left:0.85in; top:4.12in; width:6in; font-size:13pt; font-style:italic; color:var(--muted); }
+.cover-art { position:absolute; left:0; right:0; bottom:1.55in; height:4.75in; }
+.cover-fade { position:absolute; left:0; right:0; bottom:5.2in; height:1.1in; background:linear-gradient(180deg,var(--sand),rgba(245,239,230,0)); }
+.cover-art svg { width:100%; height:100%; display:block; }
+.cover-band { position:absolute; left:0; right:0; bottom:0; height:1.57in; background:var(--teal); padding:0.32in 0.85in 0; }
+.cover-badge { font-family:Inter, sans-serif; font-size:10pt; letter-spacing:.06em; color:#cfe0e3; }
+.cover-catch { font-family:Inter, sans-serif; font-weight:600; font-size:13pt; letter-spacing:.16em; text-transform:uppercase; color:#f2b8a6; margin-top:7pt; }
+.cover-by { font-family:Inter, sans-serif; font-size:7.5pt; letter-spacing:.12em; text-transform:uppercase; color:#9fbcc1; margin-top:12pt; }
 /* toc */
 .toc-row { display:flex; align-items:baseline; gap:6pt; font-size: 9.8pt; padding: 1.1pt 0; }
 .toc-row.lvl0 { font-family: Inter, sans-serif; font-weight:600; color: var(--teal); font-size: 9pt; letter-spacing:.06em; text-transform: uppercase; margin-top: 7pt; }
@@ -140,18 +144,45 @@ ul.plain { padding-left: 16pt; } ul.plain li { margin-bottom: 4pt; }
 ol.sources li { margin-bottom: 10pt; font-size: 11pt; }
 </style></head><body>
 <section class="page cover-page" data-page="1"><div class="frame"><div class="body"><div class="cover">
-    <div class="cover-for">For anyone stopping, tapering or losing access to Wegovy, Zepbound, Ozempic or Mounjaro</div>
-    <div class="cover-title">The Off-Ramp</div>
-    <div class="cover-sub">The 90-Day Plan for Keeping Your Results After GLP-1s</div>
-    
-<svg class="ramp" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <path d="M0 30 C 170 30, 230 215, 420 215 L 600 215" fill="none" stroke="#c8593c" stroke-width="10" stroke-linecap="round"/>
-  <path d="M0 60 C 160 60, 220 240, 420 240 L 600 240" fill="none" stroke="#1f4e5a" stroke-width="3" stroke-linecap="round" opacity=".55"/>
-  <circle cx="420" cy="215" r="13" fill="#1f4e5a"/>
-</svg>
+    <div class="cover-kick">A 90-day workbook</div>
+    <div class="cover-title">The<br>Off-Ramp</div>
+    <div class="cover-sub">The 90-Day Plan for Keeping Your<br>Results After GLP-1s</div>
     <div class="cover-promise">The shot did the heavy lifting. This is the plan for everything after.</div>
-    <div class="cover-catch">Ramp down, not crash down.</div>
-    <div class="cover-by">An Off-Ramp Workbook · First Edition, 2026</div>
+    <div class="cover-art"><svg viewBox="0 0 1600 1400" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky-pdf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5efe6"/>
+      <stop offset="0.55" stop-color="#f6e2d2"/>
+      <stop offset="1" stop-color="#f1c9b2"/>
+    </linearGradient>
+    <radialGradient id="glow-pdf" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f4b393" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#f4b393" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road-pdf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe3d1"/>
+      <stop offset="1" stop-color="#f8f1e7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1400" fill="url(#sky-pdf)"/>
+  <circle cx="1130" cy="770" r="420" fill="url(#glow-pdf)"/>
+  <circle cx="1130" cy="790" r="165" fill="#e98c68"/>
+  <path d="M960 330 l18 12 l18 -12 M1030 290 l14 9 l14 -9 M905 395 l12 8 l12 -8" fill="none" stroke="#1f4e5a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+  <path d="M0 800 C 230 700, 470 770, 720 742 C 960 715, 1180 800, 1600 728 L1600 1400 L0 1400Z" fill="#bcd2d0"/>
+  <path d="M0 930 C 300 836, 600 958, 900 900 C 1150 852, 1360 930, 1600 878 L1600 1400 L0 1400Z" fill="#86acaf"/>
+  <path d="M0 1064 C 350 986, 700 1084, 1000 1034 C 1250 994, 1450 1052, 1600 1022 L1600 1400 L0 1400Z" fill="#3f7f8a"/>
+  <g transform="translate(1260 1010) scale(1.05)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#2c6a75"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#2c6a75"/></g><g transform="translate(1320 1018) scale(0.8)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#2c6a75"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#2c6a75"/></g><g transform="translate(260 1012) scale(0.95)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#2c6a75"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#2c6a75"/></g><g transform="translate(205 1024) scale(0.7)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#2c6a75"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#2c6a75"/></g>
+  <path d="M0 1214 C 420 1166, 900 1236, 1600 1176 L1600 1400 L0 1400Z" fill="#1f4e5a"/>
+  <path d="M-60 600 C 330 600, 470 760, 600 905 C 730 1050, 880 1150, 1130 1158 L1700 1158" fill="none" stroke="#1f4e5a" stroke-opacity=".18" stroke-width="86" stroke-linecap="round"/>
+  <path d="M-60 588 C 330 588, 470 748, 600 893 C 730 1038, 880 1138, 1130 1146 L1700 1146" fill="none" stroke="url(#road-pdf)" stroke-width="70" stroke-linecap="round"/>
+  <path d="M-60 588 C 330 588, 470 748, 600 893 C 730 1038, 880 1138, 1130 1146 L1700 1146" fill="none" stroke="#c8593c" stroke-width="7" stroke-dasharray="34 28" stroke-linecap="round"/>
+  <g transform="translate(1460 1200) scale(1.2)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#173d46"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#173d46"/></g><g transform="translate(90 1240) scale(1.1)"><rect x="-4" y="-6" width="8" height="40" rx="3" fill="#173d46"/><ellipse cx="0" cy="-34" rx="26" ry="38" fill="#173d46"/></g>
+</svg></div><div class="cover-fade"></div>
+    <div class="cover-band">
+      <div class="cover-badge">12 weekly plans · 10 food-noise cards · 5 bonuses</div>
+      <div class="cover-catch">Ramp down, not crash down.</div>
+      <div class="cover-by">For anyone stopping, tapering or losing access to Wegovy, Zepbound, Ozempic or Mounjaro</div>
+    </div>
   </div></div></div></section>
 <section class="page " data-page="2"><div class="frame"><div class="body"><h1>Contents</h1><div class="toc"><div class="toc-row lvl1"><span class="toc-l">Before You Start</span><span class="toc-dots"></span><span class="toc-p">3</span></div><div class="toc-row lvl1"><span class="toc-l">Why This Works</span><span class="toc-dots"></span><span class="toc-p">4</span></div><div class="toc-row lvl1"><span class="toc-l">What This Book Is Not</span><span class="toc-dots"></span><span class="toc-p">5</span></div><div class="toc-row lvl1"><span class="toc-l">Your Day 1 Scores</span><span class="toc-dots"></span><span class="toc-p">6</span></div><div class="toc-row lvl1"><span class="toc-l">What to Expect</span><span class="toc-dots"></span><span class="toc-p">7</span></div><div class="toc-row lvl1"><span class="toc-l">The Rule for Bad Days</span><span class="toc-dots"></span><span class="toc-p">8</span></div><div class="toc-row lvl1"><span class="toc-l">Make It Fit Your Life</span><span class="toc-dots"></span><span class="toc-p">9</span></div><div class="toc-row lvl0"><span class="toc-l">Part 1: Before the Ramp</span><span class="toc-dots"></span><span class="toc-p">10</span></div><div class="toc-row lvl1"><span class="toc-l">The Prescriber Conversation</span><span class="toc-dots"></span><span class="toc-p">11</span></div><div class="toc-row lvl1"><span class="toc-l">Your Floors</span><span class="toc-dots"></span><span class="toc-p">12</span></div><div class="toc-row lvl1"><span class="toc-l">Your Tripwire Plan</span><span class="toc-dots"></span><span class="toc-p">13</span></div><div class="toc-row lvl0"><span class="toc-l">Part 2: The Twelve Weeks</span><span class="toc-dots"></span><span class="toc-p">14</span></div><div class="toc-weeks"><div><div class="toc-row lvl2"><span class="toc-l">Week 1: The Floor Rule</span><span class="toc-dots"></span><span class="toc-p">15</span></div><div class="toc-row lvl2"><span class="toc-l">Week 2: The Lift Rule</span><span class="toc-dots"></span><span class="toc-p">16</span></div><div class="toc-row lvl2"><span class="toc-l">Week 3: The Name-It Rule</span><span class="toc-dots"></span><span class="toc-p">17</span></div><div class="toc-row lvl2"><span class="toc-l">Week 4: The Plate Order Rule</span><span class="toc-dots"></span><span class="toc-p">18</span></div><div class="toc-row lvl2"><span class="toc-l">Week 5: The Pantry Rule</span><span class="toc-dots"></span><span class="toc-p">19</span></div><div class="toc-row lvl2"><span class="toc-l">Week 6: The Weekly Average Rule</span><span class="toc-dots"></span><span class="toc-p">20</span></div><div class="toc-row lvl2"><span class="toc-l">Halfway: a letter</span><span class="toc-dots"></span><span class="toc-p">21</span></div></div><div><div class="toc-row lvl2"><span class="toc-l">Week 7: The Hungry or Noisy Rule</span><span class="toc-dots"></span><span class="toc-p">22</span></div><div class="toc-row lvl2"><span class="toc-l">Week 8: The Liquid Rule</span><span class="toc-dots"></span><span class="toc-p">23</span></div><div class="toc-row lvl2"><span class="toc-l">Week 9: The Sleep Rule</span><span class="toc-dots"></span><span class="toc-p">24</span></div><div class="toc-row lvl2"><span class="toc-l">Week 10: The Social Plate Rule</span><span class="toc-dots"></span><span class="toc-p">25</span></div><div class="toc-row lvl2"><span class="toc-l">Week 11: The Steps Rule</span><span class="toc-dots"></span><span class="toc-p">26</span></div><div class="toc-row lvl2"><span class="toc-l">Week 12: The Keep Rule</span><span class="toc-dots"></span><span class="toc-p">27</span></div></div></div><div class="toc-row lvl0"><span class="toc-l">Part 3: The Food Noise Cards</span><span class="toc-dots"></span><span class="toc-p">28</span></div><div class="toc-row lvl0"><span class="toc-l">Part 4: The Restart Question</span><span class="toc-dots"></span><span class="toc-p">34</span></div><div class="toc-row lvl1"><span class="toc-l">Your Day 90 Scores</span><span class="toc-dots"></span><span class="toc-p">35</span></div><div class="toc-row lvl1"><span class="toc-l">The Keep Five</span><span class="toc-dots"></span><span class="toc-p">36</span></div><div class="toc-row lvl0"><span class="toc-l">The Working Pages</span><span class="toc-dots"></span><span class="toc-p">37</span></div><div class="toc-row lvl1"><span class="toc-l">The Whole Method on One Page</span><span class="toc-dots"></span><span class="toc-p">38</span></div><div class="toc-row lvl1"><span class="toc-l">The 12-Week Tracker</span><span class="toc-dots"></span><span class="toc-p">39</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 1: The 7-Day Quickstart</span><span class="toc-dots"></span><span class="toc-p">40</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 2: The Protein Floor Cheat Sheet</span><span class="toc-dots"></span><span class="toc-p">41</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 3: The 20-Minute Minimum Session</span><span class="toc-dots"></span><span class="toc-p">42</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 4: What to Say When</span><span class="toc-dots"></span><span class="toc-p">43</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 5: The Prescriber Visit Log</span><span class="toc-dots"></span><span class="toc-p">44</span></div><div class="toc-row lvl1"><span class="toc-l">The Card Log</span><span class="toc-dots"></span><span class="toc-p">45</span></div><div class="toc-row lvl0"><span class="toc-l">The Honest Small Print</span><span class="toc-dots"></span><span class="toc-p">46</span></div><div class="toc-row lvl1"><span class="toc-l">Sources and Further Reading</span><span class="toc-dots"></span><span class="toc-p">47</span></div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>2</span></div></div></section>
 <section class="page " data-page="3"><div class="frame"><div class="body"><div class="kicker">A letter</div><h1>Before You Start</h1><div class="letter"><p>If you are holding this, one of three things probably just happened. Your prescriber said it is time to come down. Your insurance stopped paying, or the price stopped making sense. Or you decided you want to find out who you are without a weekly injection. Whichever it was, you are likely carrying the same worry almost everyone carries at this point: <em>what if it all comes back?</em></p><p>Put the shame down first, because you will need both hands. Studies keep finding that roughly half of people who start a GLP-1 for weight stop within a year. You are not the exception. You are the majority. And when people stop, appetite usually returns, because the medicine was doing a job your biology will now try to undo. That is physiology, not a verdict on your willpower.</p><p>Here is what is also true: almost nobody is handed a plan for this part. You got a schedule for going <em>up</em>. You got a leaflet about nausea. For the way down you got one appointment, a shrug, or nothing. Clinicians themselves say there is no standard protocol yet for life after the medication.</p><p>This workbook is that missing plan. It will not tell you how to taper; that is your prescriber's call, and Part 1 helps you have that conversation well. It gives you what the medication cannot: a protein floor, a strength minimum, a way to handle food noise when it comes back, and a decision, made in advance, about what you will do if the scale climbs.</p><p>Ninety days. One page a week. A set of cards for the hard moments in between.</p><p>The promise is not that nothing will change. Something will. The promise is that when it does, you will already know what to do, and you will be doing it from a plan instead of a panic.</p><p class="signoff">Ramp down, not crash down.</p></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>3</span></div></div></section>
