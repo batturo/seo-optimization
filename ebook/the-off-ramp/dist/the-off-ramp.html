@@ -1,0 +1,552 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The Off-Ramp: The 90-Day Plan for Keeping Your Results After GLP-1s</title><style>
+@page { size: 8.5in 11in; margin: 0; }
+:root { --ink:#1d2a2e; --teal:#1f4e5a; --teal2:#2f6f7e; --sand:#f5efe6; --sand2:#e8dccb; --coral:#c8593c; --muted:#5b6b70; --green:#3f7d58; --yellow:#c99a2e; --red:#b5452f; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:#fff; color:var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Caladea', 'Liberation Serif', serif; font-size: 12pt; line-height: 1.5; }
+.page { width:8.5in; height:11in; position:relative; overflow:hidden; page-break-after:always; break-after:page; }
+.frame { position:absolute; inset:0.4in; border:0.75pt solid var(--teal); padding:0.42in 0.55in 0.3in; display:flex; flex-direction:column; }
+.body { flex:1; overflow:hidden; min-height:0; }
+.foot { font-family:Inter, sans-serif; font-size:7pt; letter-spacing:.14em; color:var(--muted); display:flex; justify-content:space-between; padding-top:8pt; border-top:0.5pt solid var(--sand2); margin-top:6pt; }
+h1 { font-size: 29pt; line-height:1.1; margin: 0 0 10pt; color:var(--teal); font-weight:700; }
+h2 { font-size: 15pt; color:var(--teal); margin: 6pt 0 6pt; }
+h3 { font-size: 12.5pt; color:var(--teal); margin: 12pt 0 3pt; font-family:Inter, sans-serif; font-weight:600; letter-spacing:.01em; }
+p { margin: 0 0 7pt; }
+strong { color: var(--ink); }
+.kicker, .label { font-family:Inter, sans-serif; text-transform:uppercase; letter-spacing:.16em; font-size:8.3pt; color:var(--coral); font-weight:600; margin-bottom:5pt; }
+.label { margin-top:10pt; }
+.muted { color: var(--muted); }
+.small { font-size: 10pt; color: var(--muted); line-height:1.4; }
+.line { border-bottom: 0.75pt solid #b9c3c5; height: 26pt; }
+.line.tight { height: 19pt; }
+.line.inline { flex:1; height: 15pt; margin-left:6pt; }
+.line.short { max-width: 1.4in; }
+.callout { background: var(--sand); border-left: 3pt solid var(--coral); padding: 8pt 11pt; margin-top: 12pt; }
+.pull { font-size: 17pt; font-style: italic; color: var(--teal); margin: 16pt 0 0; padding-top: 10pt; border-top: 1pt solid var(--sand2); }
+.pull.top { margin: 0 0 10pt; padding-top: 0; border-top: none; }
+.letter p { font-size: 12.8pt; line-height: 1.58; margin-bottom: 10pt; }
+.signoff { font-style: italic; color: var(--teal); font-size: 13pt !important; margin-top: 12pt; }
+.box { display:inline-block; width:12pt; height:12pt; border:0.9pt solid var(--teal); border-radius:2pt; vertical-align:middle; background:#fff; }
+/* cover */
+.cover-page .frame { border-width: 1.5pt; background: var(--sand); }
+.cover { height:100%; display:flex; flex-direction:column; padding-top: 0.4in; }
+.cover-for { font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); max-width:5.2in; line-height:1.5; }
+.cover-title { font-size: 60pt; font-weight:700; color:var(--teal); line-height:1; margin-top: 0.45in; letter-spacing:-.01em; }
+.cover-sub { font-size: 18pt; color:var(--ink); margin-top: 12pt; max-width: 5.6in; line-height:1.25; }
+.ramp { width: 100%; height: auto; margin: 0.5in 0 0.35in; }
+.cover-promise { font-size: 15pt; font-style: italic; color: var(--ink); max-width: 5.6in; line-height: 1.35; }
+.cover-catch { font-family:Inter, sans-serif; font-weight:600; color: var(--coral); font-size: 11pt; letter-spacing:.08em; text-transform:uppercase; margin-top: 16pt; }
+.cover-by { margin-top:auto; font-family:Inter, sans-serif; font-size:8.5pt; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; }
+/* toc */
+.toc-row { display:flex; align-items:baseline; gap:6pt; font-size: 9.8pt; padding: 1.1pt 0; }
+.toc-row.lvl0 { font-family: Inter, sans-serif; font-weight:600; color: var(--teal); font-size: 9pt; letter-spacing:.06em; text-transform: uppercase; margin-top: 7pt; }
+.toc-row.lvl1 { padding-left: 12pt; }
+.toc-row.lvl2 { font-size: 9.5pt; padding-left: 12pt; }
+.toc-dots { flex:1; border-bottom: 0.75pt dotted #b9c3c5; transform: translateY(-3pt); }
+.toc-p { font-family: Inter, sans-serif; font-size: 8.5pt; color: var(--muted); min-width: 16pt; text-align:right; }
+.toc-weeks { display:grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
+/* facts and tables */
+.facts { margin: 8pt 0; }
+.facts.two { display:grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
+.fact { display:flex; align-items:flex-end; margin: 7pt 0; font-size: 11.2pt; }
+.fact > span:first-child { white-space: nowrap; }
+table.grid { width:100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.8pt; }
+table.grid th { font-family: Inter, sans-serif; font-size: 8pt; letter-spacing:.08em; text-transform: uppercase; color: #fff; background: var(--teal); text-align:left; padding: 5pt 6pt; font-weight:600; }
+table.grid td { border: 0.6pt solid #c9d1d3; padding: 5pt 6pt; vertical-align: top; }
+table.scores td.blank { width: 1.1in; }
+table.scores td { height: 32pt; vertical-align: middle; }
+table.tick { margin-top: 10pt; }
+table.tick th { text-align:center; width: 0.42in; }
+table.tick th.rowlabel { text-align:left; width:auto; }
+table.tick td { text-align:center; vertical-align: middle; height: 30pt; }
+table.tick td.rowlabel { text-align:left; font-size: 10.4pt; }
+table.tracker td { height: 40pt; vertical-align: middle; }
+table.tracker th { font-size: 6.8pt; }
+table.log td { height: 34pt; }
+.log-page.visit table.log td { height: 66pt; }
+table.protein td { padding: 2.4pt 6pt; font-size: 9.8pt; line-height: 1.35; }
+table.protein tbody tr:nth-child(even) td { background: #faf7f2; }
+td.numr { text-align: right; font-family: Inter, sans-serif; font-size: 8.8pt; }
+td.nowrap { white-space: nowrap; }
+table.moves td { font-size: 10.8pt; }
+table.help td { font-size: 10.8pt; }
+table.qs-table td { vertical-align: middle; height: 52pt; font-size: 11.6pt; }
+table.qs-table td.day { width: 0.75in; font-family: Inter, sans-serif; font-weight: 600; color: var(--teal); font-size: 9pt; }
+table.qs-table td.tickcell { width: 0.45in; text-align: center; }
+/* timeline */
+.timeline { margin: 10pt 0; border-left: 2pt solid var(--sand2); padding-left: 14pt; }
+.phase { margin-bottom: 14pt; }
+.phase-w { font-family: Inter, sans-serif; font-size: 7.5pt; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.phase-n { font-size: 16pt; color: var(--teal); font-weight: 700; margin: 1pt 0 2pt; }
+/* rules */
+.rule-name { margin-top: 2pt; }
+ul.rules { padding-left: 16pt; } ul.rules li { margin-bottom: 9pt; }
+/* dividers */
+.divider-page .frame { background: var(--teal); border-color: var(--teal); color: #fff; }
+.divider-page .foot { color: #cfe0e3; border-top-color: rgba(255,255,255,.25); }
+.divider { padding-top: 1.6in; }
+.part-label { font-family: Inter, sans-serif; letter-spacing: .2em; text-transform: uppercase; font-size: 9pt; color: #f2b8a6; }
+.part-title { font-size: 40pt; font-weight: 700; margin: 6pt 0 16pt; line-height: 1.05; }
+.part-copy { font-size: 14.5pt; line-height: 1.5; max-width: 5.6in; color: #eef5f6; }
+.part-list { margin-top: 22pt; padding-left: 0; list-style: none; font-family: Inter, sans-serif; font-size: 10pt; letter-spacing: .03em; color: #d7e7ea; }
+.part-list li { padding: 4pt 0; border-top: 0.5pt solid rgba(255,255,255,.2); }
+/* prescriber */
+ol.qs { padding-left: 16pt; margin: 8pt 0 0; } ol.qs li { margin-bottom: 4pt; } .q { font-weight: 600; font-size: 11.2pt; }
+/* floors */
+.calc { margin: 6pt 0 6pt; } .calc-row { display:flex; align-items:flex-end; justify-content:space-between; font-size: 11.2pt; padding: 5pt 0; }
+.calc-blank { width: 1.1in; border-bottom: 0.75pt solid #b9c3c5; height: 14pt; margin-left: 10pt; }
+/* tripwire */
+.zone { display:flex; margin: 8pt 0; border: 0.75pt solid #c9d1d3; }
+.zone-name { width: 0.95in; font-family: Inter, sans-serif; font-weight: 700; color:#fff; font-size: 10pt; letter-spacing: .1em; text-transform: uppercase; display:flex; align-items:center; justify-content:center; }
+.zone-green .zone-name { background: var(--green); } .zone-yellow .zone-name { background: var(--yellow); } .zone-red .zone-name { background: var(--red); }
+.zone-body { padding: 10pt 12pt; flex:1; } .zone-cond { font-weight: 700; margin-bottom: 3pt; } .zone-act { font-size: 11pt; }
+.sign { margin-top: 10pt; font-style: italic; }
+/* weeks */
+.week-top { display:flex; justify-content: space-between; align-items: center; margin-bottom: 4pt; }
+.week-top .kicker { margin: 0; }
+.progress { display:flex; gap: 2.5pt; } .progress span { width: 13pt; height: 5pt; background: var(--sand2); border-radius: 1pt; } .progress span.on { background: var(--coral); }
+.week-page h1 { margin-bottom: 5pt; }
+.rule-line { font-size: 15.5pt; font-style: italic; color: var(--ink); background: var(--sand); padding: 8pt 11pt; border-left: 3pt solid var(--coral); margin-bottom: 9pt; line-height: 1.35; }
+.why p { font-size: 12pt; }
+.move ul { margin: 2pt 0 0; padding-left: 16pt; } .move li { margin-bottom: 4pt; font-size: 11.8pt; }
+.weekly-sum { display:grid; grid-template-columns: 1fr 1.4fr; gap: 0 18pt; margin-top: 8pt; }
+.zones-pick { display:flex; gap: 12pt; margin-left: 8pt; font-size: 9.6pt; } .zp { white-space: nowrap; } .zp .box { margin-right: 3pt; }
+.hard-week { margin-top: 14pt; font-size: 11pt; color: var(--muted); font-style: italic; } .hard-week .card-tab { font-style: normal; margin-right: 6pt; }
+/* cards */
+.cards { display:flex; flex-direction:column; gap: 14pt; height: 100%; }
+.card { flex:1; border: 1pt solid var(--teal); border-radius: 6pt; padding: 12pt 14pt; position: relative; background: #fff; }
+.card-tab { font-family: Inter, sans-serif; font-size: 7.5pt; letter-spacing: .16em; text-transform: uppercase; color: #fff; background: var(--coral); display:inline-block; padding: 3pt 8pt; border-radius: 3pt; }
+.card-title { font-size: 19pt; font-weight: 700; color: var(--teal); margin: 8pt 0 8pt; line-height: 1.2; }
+.card-row { display:grid; grid-template-columns: 1.2in 1fr; gap: 10pt; padding: 7pt 0; border-top: 0.5pt solid var(--sand2); font-size: 11.4pt; }
+.card-k { font-family: Inter, sans-serif; font-size: 7.3pt; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding-top: 2pt; }
+.card-say { font-style: italic; font-size: 13pt; color: var(--teal); }
+.card-row ol { margin: 0; padding-left: 15pt; } .card-row ol li { margin-bottom: 2pt; }
+/* restart */
+ul.checks { list-style:none; padding:0; } ul.checks li { display:flex; gap: 8pt; margin-bottom: 8pt; align-items:flex-start; } ul.checks .box { margin-top: 2pt; flex: none; }
+ul.plain { padding-left: 16pt; } ul.plain li { margin-bottom: 4pt; }
+/* keep five */
+.keep { margin: 12pt 0; } .keep-row { display:flex; align-items:flex-end; margin: 14pt 0; }
+.keep-n { width: 24pt; height: 24pt; border-radius: 50%; background: var(--teal); color:#fff; font-family: Inter, sans-serif; font-weight:700; display:flex; align-items:center; justify-content:center; font-size: 10pt; flex: none; }
+.keep .line.inline { height: 22pt; }
+.end-catch { margin-top: 18pt; font-size: 15pt; font-style: italic; color: var(--teal); }
+.end-catch span { display:block; margin-top: 8pt; font-style: normal; font-family: Inter, sans-serif; font-weight: 600; font-size: 10pt; letter-spacing: .1em; text-transform: uppercase; color: var(--coral); }
+/* method */
+.method { display:grid; grid-template-columns: 0.8fr 1.4fr; gap: 20pt; }
+.method ol { padding-left: 15pt; margin: 2pt 0 8pt; } .method li { font-size: 10.6pt; margin-bottom: 4pt; line-height: 1.35; }
+.cards-index { border-top: 0.5pt solid var(--sand2); padding-top: 8pt; margin-top: 6pt; }
+/* scripts */
+.script { padding: 9pt 0; border-top: 0.5pt solid var(--sand2); }
+.script-when { font-weight: 700; color: var(--teal); } .script-say { font-style: italic; margin-top: 2pt; }
+ol.sources li { margin-bottom: 10pt; font-size: 11pt; }
+</style></head><body>
+<section class="page cover-page" data-page="1"><div class="frame"><div class="body"><div class="cover">
+    <div class="cover-for">For anyone stopping, tapering or losing access to Wegovy, Zepbound, Ozempic or Mounjaro</div>
+    <div class="cover-title">The Off-Ramp</div>
+    <div class="cover-sub">The 90-Day Plan for Keeping Your Results After GLP-1s</div>
+    
+<svg class="ramp" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M0 30 C 170 30, 230 215, 420 215 L 600 215" fill="none" stroke="#c8593c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M0 60 C 160 60, 220 240, 420 240 L 600 240" fill="none" stroke="#1f4e5a" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <circle cx="420" cy="215" r="13" fill="#1f4e5a"/>
+</svg>
+    <div class="cover-promise">The shot did the heavy lifting. This is the plan for everything after.</div>
+    <div class="cover-catch">Ramp down, not crash down.</div>
+    <div class="cover-by">An Off-Ramp Workbook · First Edition, 2026</div>
+  </div></div></div></section>
+<section class="page " data-page="2"><div class="frame"><div class="body"><h1>Contents</h1><div class="toc"><div class="toc-row lvl1"><span class="toc-l">Before You Start</span><span class="toc-dots"></span><span class="toc-p">3</span></div><div class="toc-row lvl1"><span class="toc-l">Why This Works</span><span class="toc-dots"></span><span class="toc-p">4</span></div><div class="toc-row lvl1"><span class="toc-l">What This Book Is Not</span><span class="toc-dots"></span><span class="toc-p">5</span></div><div class="toc-row lvl1"><span class="toc-l">Your Day 1 Scores</span><span class="toc-dots"></span><span class="toc-p">6</span></div><div class="toc-row lvl1"><span class="toc-l">What to Expect</span><span class="toc-dots"></span><span class="toc-p">7</span></div><div class="toc-row lvl1"><span class="toc-l">The Rule for Bad Days</span><span class="toc-dots"></span><span class="toc-p">8</span></div><div class="toc-row lvl1"><span class="toc-l">Make It Fit Your Life</span><span class="toc-dots"></span><span class="toc-p">9</span></div><div class="toc-row lvl0"><span class="toc-l">Part 1: Before the Ramp</span><span class="toc-dots"></span><span class="toc-p">10</span></div><div class="toc-row lvl1"><span class="toc-l">The Prescriber Conversation</span><span class="toc-dots"></span><span class="toc-p">11</span></div><div class="toc-row lvl1"><span class="toc-l">Your Floors</span><span class="toc-dots"></span><span class="toc-p">12</span></div><div class="toc-row lvl1"><span class="toc-l">Your Tripwire Plan</span><span class="toc-dots"></span><span class="toc-p">13</span></div><div class="toc-row lvl0"><span class="toc-l">Part 2: The Twelve Weeks</span><span class="toc-dots"></span><span class="toc-p">14</span></div><div class="toc-weeks"><div><div class="toc-row lvl2"><span class="toc-l">Week 1: The Floor Rule</span><span class="toc-dots"></span><span class="toc-p">15</span></div><div class="toc-row lvl2"><span class="toc-l">Week 2: The Lift Rule</span><span class="toc-dots"></span><span class="toc-p">16</span></div><div class="toc-row lvl2"><span class="toc-l">Week 3: The Name-It Rule</span><span class="toc-dots"></span><span class="toc-p">17</span></div><div class="toc-row lvl2"><span class="toc-l">Week 4: The Plate Order Rule</span><span class="toc-dots"></span><span class="toc-p">18</span></div><div class="toc-row lvl2"><span class="toc-l">Week 5: The Pantry Rule</span><span class="toc-dots"></span><span class="toc-p">19</span></div><div class="toc-row lvl2"><span class="toc-l">Week 6: The Weekly Average Rule</span><span class="toc-dots"></span><span class="toc-p">20</span></div><div class="toc-row lvl2"><span class="toc-l">Halfway: a letter</span><span class="toc-dots"></span><span class="toc-p">21</span></div></div><div><div class="toc-row lvl2"><span class="toc-l">Week 7: The Hungry or Noisy Rule</span><span class="toc-dots"></span><span class="toc-p">22</span></div><div class="toc-row lvl2"><span class="toc-l">Week 8: The Liquid Rule</span><span class="toc-dots"></span><span class="toc-p">23</span></div><div class="toc-row lvl2"><span class="toc-l">Week 9: The Sleep Rule</span><span class="toc-dots"></span><span class="toc-p">24</span></div><div class="toc-row lvl2"><span class="toc-l">Week 10: The Social Plate Rule</span><span class="toc-dots"></span><span class="toc-p">25</span></div><div class="toc-row lvl2"><span class="toc-l">Week 11: The Steps Rule</span><span class="toc-dots"></span><span class="toc-p">26</span></div><div class="toc-row lvl2"><span class="toc-l">Week 12: The Keep Rule</span><span class="toc-dots"></span><span class="toc-p">27</span></div></div></div><div class="toc-row lvl0"><span class="toc-l">Part 3: The Food Noise Cards</span><span class="toc-dots"></span><span class="toc-p">28</span></div><div class="toc-row lvl0"><span class="toc-l">Part 4: The Restart Question</span><span class="toc-dots"></span><span class="toc-p">34</span></div><div class="toc-row lvl1"><span class="toc-l">Your Day 90 Scores</span><span class="toc-dots"></span><span class="toc-p">35</span></div><div class="toc-row lvl1"><span class="toc-l">The Keep Five</span><span class="toc-dots"></span><span class="toc-p">36</span></div><div class="toc-row lvl0"><span class="toc-l">The Working Pages</span><span class="toc-dots"></span><span class="toc-p">37</span></div><div class="toc-row lvl1"><span class="toc-l">The Whole Method on One Page</span><span class="toc-dots"></span><span class="toc-p">38</span></div><div class="toc-row lvl1"><span class="toc-l">The 12-Week Tracker</span><span class="toc-dots"></span><span class="toc-p">39</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 1: The 7-Day Quickstart</span><span class="toc-dots"></span><span class="toc-p">40</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 2: The Protein Floor Cheat Sheet</span><span class="toc-dots"></span><span class="toc-p">41</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 3: The 20-Minute Minimum Session</span><span class="toc-dots"></span><span class="toc-p">42</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 4: What to Say When</span><span class="toc-dots"></span><span class="toc-p">43</span></div><div class="toc-row lvl1"><span class="toc-l">Bonus 5: The Prescriber Visit Log</span><span class="toc-dots"></span><span class="toc-p">44</span></div><div class="toc-row lvl1"><span class="toc-l">The Card Log</span><span class="toc-dots"></span><span class="toc-p">45</span></div><div class="toc-row lvl0"><span class="toc-l">The Honest Small Print</span><span class="toc-dots"></span><span class="toc-p">46</span></div><div class="toc-row lvl1"><span class="toc-l">Sources and Further Reading</span><span class="toc-dots"></span><span class="toc-p">47</span></div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>2</span></div></div></section>
+<section class="page " data-page="3"><div class="frame"><div class="body"><div class="kicker">A letter</div><h1>Before You Start</h1><div class="letter"><p>If you are holding this, one of three things probably just happened. Your prescriber said it is time to come down. Your insurance stopped paying, or the price stopped making sense. Or you decided you want to find out who you are without a weekly injection. Whichever it was, you are likely carrying the same worry almost everyone carries at this point: <em>what if it all comes back?</em></p><p>Put the shame down first, because you will need both hands. Studies keep finding that roughly half of people who start a GLP-1 for weight stop within a year. You are not the exception. You are the majority. And when people stop, appetite usually returns, because the medicine was doing a job your biology will now try to undo. That is physiology, not a verdict on your willpower.</p><p>Here is what is also true: almost nobody is handed a plan for this part. You got a schedule for going <em>up</em>. You got a leaflet about nausea. For the way down you got one appointment, a shrug, or nothing. Clinicians themselves say there is no standard protocol yet for life after the medication.</p><p>This workbook is that missing plan. It will not tell you how to taper; that is your prescriber's call, and Part 1 helps you have that conversation well. It gives you what the medication cannot: a protein floor, a strength minimum, a way to handle food noise when it comes back, and a decision, made in advance, about what you will do if the scale climbs.</p><p>Ninety days. One page a week. A set of cards for the hard moments in between.</p><p>The promise is not that nothing will change. Something will. The promise is that when it does, you will already know what to do, and you will be doing it from a plan instead of a panic.</p><p class="signoff">Ramp down, not crash down.</p></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>3</span></div></div></section>
+<section class="page " data-page="4"><div class="frame"><div class="body"><div class="kicker">The honest theory page</div><h1>Why This Works</h1><h3>What the medication was doing</h3><p>GLP-1 medicines such as semaglutide (Wegovy, Ozempic) and tirzepatide (Zepbound, Mounjaro) imitate gut hormones that tell your brain you have eaten enough. They slow how fast your stomach empties, and for many people they turn down the constant background chatter about food that people call <strong>food noise</strong>. When you stop, those effects fade over a few weeks as the drug clears your system. The timing depends on the drug and the dose.</p><h3>What usually happens next</h3><p>In the STEP 1 trial extension, people who stopped semaglutide regained about two-thirds of the weight they had lost within a year. In SURMOUNT-4, people switched from tirzepatide to a placebo regained more than half of what they had lost, even with continued diet and activity counseling. Those are averages. They tell you the pull is real and strong. They do not tell you your number, and some people in both trials kept much of their loss.</p><h3>The three levers this book pulls</h3><p><strong>1. Protect the muscle.</strong> Some of the weight lost on GLP-1s is lean mass. Resistance training and enough protein are the best-supported ways to protect and rebuild it. Muscle matters for strength, for blood sugar handling and for aging well.</p><p><strong>2. Build structure before the appetite returns.</strong> Anchored meals, a quieter kitchen and responses decided in advance mean fewer decisions get made while you are hungry. Research on people who keep weight off long term keeps finding the same habits: consistent eating patterns, plenty of daily movement and regular self-monitoring.</p><p><strong>3. Catch small changes early.</strong> A few pounds noticed and acted on is a very different problem from twenty pounds discovered in March. That is what your Tripwire Plan is for.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>4</span></div></div></section>
+<section class="page " data-page="5"><div class="frame"><div class="body"><div class="kicker">Read this once, then keep going</div><h1>What This Book Is Not</h1><p><strong>It is not medical advice.</strong> Nothing here tells you whether, when or how to stop, taper or restart a medication. That is a decision for you and your prescriber, and Part 1 exists so you walk into that appointment with the right questions.</p><p><strong>It is not a taper schedule.</strong> You will find no doses in this book, on purpose.</p><p><strong>It is not a diet.</strong> There are no calorie targets and no banned foods. There is a protein floor, which is a minimum, not a maximum, and a set of habits.</p><p><strong>It is not a substitute for your care team.</strong> If you have type 2 diabetes, stopping a GLP-1 can change your blood sugar, and that needs monitoring agreed with your clinician. If you take blood pressure or diabetes medicines, ask whether anything needs adjusting when you stop.</p><p><strong>It is not right for everyone as written.</strong> If you have a history of disordered eating, weighing, tracking and rules can do harm. See "Make It Fit Your Life" before you begin.</p><p class="callout">What it is: the plan nobody handed you, built from the parts of the evidence that are solid, written so you can actually use it on a Tuesday night.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>5</span></div></div></section>
+<section class="page " data-page="6"><div class="frame"><div class="body"><div class="kicker">The starting line</div><h1>Your Day 1 Scores</h1><p>Fill this in today, before Week 1. On Day 90 you will score the same things again, side by side. Feelings are slippery; numbers you wrote yourself are not.</p>
+   <div class="facts"><div class="fact"><span>Medication and highest dose:</span><div class="line inline"></div></div><div class="fact"><span>Last dose (or planned last dose):</span><div class="line inline"></div></div><div class="fact"><span>Stop weight, 7-day average (optional):</span><div class="line inline"></div></div></div>
+   <table class="grid scores"><thead><tr><th>Measure</th><th>How to score</th><th>Day 1</th></tr></thead><tbody><tr><td><strong>Food noise</strong></td><td class="muted">0 = silent, 10 = constant</td><td class="blank"></td></tr><tr><td><strong>Confidence I can keep my results</strong></td><td class="muted">0 to 10</td><td class="blank"></td></tr><tr><td><strong>Energy on a normal afternoon</strong></td><td class="muted">0 to 10</td><td class="blank"></td></tr><tr><td><strong>30-second chair stands</strong></td><td class="muted">Count, see the note below</td><td class="blank"></td></tr><tr><td><strong>Days I hit my protein floor</strong></td><td class="muted">Out of the last 7</td><td class="blank"></td></tr><tr><td><strong>Waist at the belly button (optional)</strong></td><td class="muted">Inches or cm</td><td class="blank"></td></tr></tbody></table>
+   <p class="small"><strong>The chair-stand test:</strong> sit in a sturdy chair without arms, feet flat, arms crossed over your chest. Count how many times you can stand fully and sit back down in 30 seconds. It is a simple strength check used by clinicians. Skip it if it is not safe for you.</p>
+   <div class="label">A note to Day-90 me:</div><div class="line "></div><div class="line "></div><div class="line "></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>6</span></div></div></section>
+<section class="page " data-page="7"><div class="frame"><div class="body"><div class="kicker">The emotional timeline</div><h1>What to Expect</h1><p>Most plans fail at a predictable moment, and the moment is predictable because it is chemical. Here is the usual shape of the next ninety days, so nothing surprises you.</p>
+   <div class="timeline"><div class="phase"><div class="phase-w">Weeks 1 to 2</div><div class="phase-n">The Coast</div><p>The medication is still partly in your system. Appetite stays low and you may wonder what the fuss was about. This is your best window: build the floors now, while it is easy. The risk here is complacency.</p></div><div class="phase"><div class="phase-w">Weeks 3 to 6</div><div class="phase-n">The Return</div><p>Appetite and food noise come back, sometimes gradually, sometimes all at once. Portions creep. The scale may jump a few pounds from water and the simple fact that there is more food in you. This is the wobble, and it is planned for: the cards in Part 3 exist for exactly these weeks.</p></div><div class="phase"><div class="phase-w">Weeks 7 to 9</div><div class="phase-n">The Test</div><p>The novelty is gone, the noise is back and the plan starts to feel like work. This is where most plans quietly die. It is also why there is a letter waiting for you at the halfway point.</p></div><div class="phase"><div class="phase-w">Weeks 10 to 12</div><div class="phase-n">The Settle</div><p>The routines start running without you pushing them. You know your noise patterns, you know your numbers, and you have three months of evidence about what works for you.</p></div></div>
+   <p class="callout">Somewhere around Week 4 you will probably want to quit. That is not a sign the plan is failing. It is a sign it is Week 4.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>7</span></div></div></section>
+<section class="page " data-page="8"><div class="frame"><div class="body"><div class="kicker">Read this before you need it</div><h1>The Rule for Bad Days</h1><h2 class="rule-name">The No-Catch-Up Rule</h2><p>You will miss things. Everyone does. What decides how the next ninety days go is not whether you miss, it is what you do next. So here is the rule, and it has no exceptions:</p>
+   <ul class="rules"><li><strong>No catching up.</strong> Missed a strength session? You do not do two next time. You do the next one.</li><li><strong>No compensating.</strong> Ate the whole thing? The next meal is a normal meal at your protein floor. Not a skipped meal, not a punishment salad.</li><li><strong>No restarts.</strong> You never go back to Week 1. You do not "start again on Monday." You do today.</li></ul>
+   <p>One off day is information. Three off days in a row is a signal, and the signal has a card: open Card 10, "I haven't done any of this for a week."</p><div class="pull">The tick-grid is a record, not a courtroom.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>8</span></div></div></section>
+<section class="page " data-page="9"><div class="frame"><div class="body"><div class="kicker">Adjustments for real lives</div><h1>Make It Fit Your Life</h1><h3>You lost access suddenly, with no taper</h3><p>You are starting Week 1 with less runway, because the medication may wear off faster than it would on a planned step-down. Do the 7-Day Quickstart (in the bonus pages) first, then begin Week 1. Still book the prescriber conversation, even if more medication is off the table: you need the follow-up for blood pressure, blood work and a plan.</p><h3>You have type 2 diabetes</h3><p>Stopping a GLP-1 can raise blood sugar. Agree a monitoring plan with your care team before you stop, and add a glucose row to your weekly page if they ask you to track it. Their numbers outrank anything in this book.</p><h3>You work shifts or keep odd hours</h3><p>"Breakfast, lunch and dinner" means your first, middle and last meal after waking, whatever the clock says. The floors and the rules work the same way.</p><h3>You have joint pain, an injury or limited mobility</h3><p>The Minimum Strength Session has seated and supported versions. If anything hurts in a sharp way, stop, and ask your clinician about a referral to a physical therapist. It is one of the most useful referrals you can ask for.</p><h3>You have a history of disordered eating</h3><p>Skip all weighing and do not track numbers. Use this book only alongside a professional who knows your history. Reaching out is the strong move here, not the weak one: the ANAD helpline is listed in the small print at the back.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>9</span></div></div></section>
+<section class="page divider-page" data-page="10"><div class="frame"><div class="body"><div class="divider"><div class="part-label">Part 1</div><div class="part-title">Before the Ramp</div>
+   <p class="part-copy">Three pages and about an hour. These are the decisions you would rather not make while you are hungry, so you make them now, while you are calm.</p><ul class="part-list"><li>The Prescriber Conversation</li><li>Your Floors</li><li>Your Tripwire Plan</li></ul></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>10</span></div></div></section>
+<section class="page " data-page="11"><div class="frame"><div class="body"><div class="kicker">Part 1 · Setup page 1 of 3</div><h1>The Prescriber Conversation</h1><p>Bring this page to your appointment, or a phone photo of it. Write the answers in while you are in the room. If time runs short, ask questions 1, 4 and 6 first.</p>
+   <ol class="qs"><li><div class="q">Should I stop all at once, step down gradually, or stay on a lower dose for maintenance? Why that option for me?</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">If we step down, what is the schedule, and what should make me call you before the next step?</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">Which checks do you want, and when? (Blood pressure, blood sugar or A1c, cholesterol, anything else.)</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">How much weight regain should make me call you? Can we set a number together?</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">If I want to restart later, what would that look like? Would I start again at the lowest dose?</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">Do any of my other medications need adjusting when I stop?</div><div class="line tight"></div><div class="line tight"></div></li><li><div class="q">Can you refer me to a registered dietitian or a physical therapist? Is it covered?</div><div class="line tight"></div><div class="line tight"></div></li></ol></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>11</span></div></div></section>
+<section class="page " data-page="12"><div class="frame"><div class="body"><div class="kicker">Part 1 · Setup page 2 of 3</div><h1>Your Floors</h1><p>A floor is the minimum you do on your worst week. Not your goal, not your ideal: the floor. Good weeks will go above it on their own.</p>
+   <h3>Floor 1: Protein</h3><p>Many clinicians and dietitians suggest somewhere around 1.2 to 1.6 grams of protein per kilogram of body weight per day during and after weight loss. Some people need more, and some need less, including many people with kidney disease. Ask your clinician or dietitian for your number, then do the arithmetic below.</p>
+   <div class="calc"><div class="calc-row"><span>My weight in pounds ÷ 2.2 = kilograms</span><span class="calc-blank"></span></div><div class="calc-row"><span>Kilograms × my target (for example 1.2) = grams per day</span><span class="calc-blank"></span></div><div class="calc-row"><span>Grams per day ÷ number of meals = my per-meal floor</span><span class="calc-blank"></span></div></div>
+   <p class="small">Most people land somewhere around 25 to 40 grams per meal. The Protein Floor Cheat Sheet in the bonus pages shows what that looks like on a plate.</p>
+   <h3>Floor 2: Strength</h3><p>Two sessions a week of the 20-Minute Minimum Session (bonus pages), or your own equivalent. My two days are:</p>
+   <div class="facts two"><div class="fact"><span>Day 1:</span><div class="line inline"></div></div><div class="fact"><span>Day 2:</span><div class="line inline"></div></div></div>
+   <h3>Floor 3: Daily movement</h3><p>Check your phone or watch for your average daily steps over the last week, then add 1,000. Not walking much right now? Start from where you are; any number above today counts.</p>
+   <div class="facts two"><div class="fact"><span>Average now:</span><div class="line inline"></div></div><div class="fact"><span>My step floor:</span><div class="line inline"></div></div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>12</span></div></div></section>
+<section class="page " data-page="13"><div class="frame"><div class="body"><div class="kicker">Part 1 · Setup page 3 of 3</div><h1>Your Tripwire Plan</h1><p>You decide now, while calm, exactly what you will do if the numbers move. Then, if they do, you are following a plan rather than having a feeling about it.</p>
+   <div class="facts"><div class="fact"><span>My stop weight (7-day average) or waist:</span><div class="line inline"></div></div></div>
+   <div class="zone zone-green"><div class="zone-name">Green</div><div class="zone-body"><div class="zone-cond">Within ____ of my stop weight</div><div class="zone-act">Keep doing the weekly page. Nothing else changes.</div></div></div><div class="zone zone-yellow"><div class="zone-name">Yellow</div><div class="zone-body"><div class="zone-cond">Between ____ and ____ above my stop weight</div><div class="zone-act">For two weeks: hit my protein floor at every meal, log food noise every day, do both strength sessions, and read Card 7.</div></div></div><div class="zone zone-red"><div class="zone-name">Red</div><div class="zone-body"><div class="zone-cond">More than ____ above, or food noise at 8+ most days for two weeks</div><div class="zone-act">Call my prescriber (the number we set in question 4) and book a dietitian. Read Part 4, The Restart Question.</div></div></div>
+   <p class="small">If your prescriber did not give you numbers, a common starting point is a Yellow line at about 3% above your stop weight and a Red line at about 5%. Researchers often treat a change under 3% as "maintained" and a change of 5% or more as meaningful. Not weighing? Use your waist measurement or one honest pair of jeans instead.</p>
+   <div class="sign"><span>I agree to follow this plan, even on the day I do not feel like it.</span><div class="facts two"><div class="fact"><span>Signed:</span><div class="line inline"></div></div><div class="fact"><span>Date:</span><div class="line inline"></div></div></div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>13</span></div></div></section>
+<section class="page divider-page" data-page="14"><div class="frame"><div class="body"><div class="divider"><div class="part-label">Part 2</div><div class="part-title">The Twelve Weeks</div>
+   <p class="part-copy">One page a week, the same shape every time, so your thumb always knows where to go. Read the page on Sunday. Tick the grid each evening. Write one honest line at the end of the week.</p><ul class="part-list"><li>Weeks 1 to 2: The Coast</li><li>Weeks 3 to 6: The Return</li><li>Weeks 7 to 9: The Test</li><li>Weeks 10 to 12: The Settle</li></ul></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>14</span></div></div></section>
+<section class="page week-page" data-page="15"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 1 of 12 · The Coast</div><div class="progress"><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Floor Rule</h1>
+  <div class="rule-line">Every meal starts with protein, and the protein gets to your floor before anything else does.</div>
+  <div class="why"><p>Right now the medication is still partly working, so your appetite is low. That makes this the easiest week of the ninety to build the habit that matters most.</p><p>For most people protein is the most filling thing on the plate, and it is the raw material for the muscle you want to keep. Many people coming off a GLP-1 discover they ate very little protein for months, simply because they barely ate.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Choose three breakfasts, three lunches and three dinners that reach your per-meal floor. Write them on the Protein Floor Cheat Sheet.</li><li>At every meal, eat the protein part first.</li><li>Shop for those nine meals this week, so the floor is the easy option.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Protein eaten first</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 10: I have not done any of this for a week.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>15</span></div></div></section>
+<section class="page week-page" data-page="16"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 2 of 12 · The Coast</div><div class="progress"><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Lift Rule</h1>
+  <div class="rule-line">Twice a week, you lift something heavy enough to notice.</div>
+  <div class="why"><p>Some of the weight lost on GLP-1s is lean mass, and muscle does not come back on its own. Resistance training is the best-supported way to protect and rebuild it.</p><p>You do not need a gym, a trainer or an outfit. You need twenty minutes, a sturdy chair, a wall and something with a handle. Heavy enough to notice means the last two repetitions feel like work.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Put two 20-minute sessions in your calendar like appointments.</li><li>Do the 20-Minute Minimum Session from the bonus pages.</li><li>Redo your chair-stand count at the end of the week and write it below.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Strength session</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 10: I have not done any of this for a week.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>16</span></div></div></section>
+<section class="page week-page" data-page="17"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 3 of 12 · The Return</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Name-It Rule</h1>
+  <div class="rule-line">When food noise shows up, name it, score it and give it ten minutes.</div>
+  <div class="why"><p>For many people this is the week the noise starts coming back. Cravings tend to rise, peak and fall like a wave rather than building forever. Psychologists call riding one out without fighting or obeying it "urge surfing," and it has research support for cravings of many kinds.</p><p>Naming the thought puts a little space between you and it. "I want cookies" is an order. "That is food noise, about a 6" is a weather report.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>When a food thought arrives outside a planned meal, say "that is noise" and score it from 0 to 10.</li><li>Set a 10-minute timer and give your hands something to do.</li><li>When it rings, decide on purpose. Sometimes the answer is yes, and that is fine.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Noise named + 10 min</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 5: The food noise is back and it is loud all day.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>17</span></div></div></section>
+<section class="page week-page" data-page="18"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 4 of 12 · The Return</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Plate Order Rule</h1>
+  <div class="rule-line">Protein and vegetables first. Starch last.</div>
+  <div class="why"><p>Some small studies have found that eating vegetables and protein before carbohydrates leads to smaller blood sugar spikes after a meal, and many people find it fills them up sooner. It is not magic. It is sequencing.</p><p>The medication slowed your stomach down. Now you slow your fork down instead. Fullness signals take time to arrive, and a meal eaten in eight minutes outruns them.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>At every meal: protein and vegetables first, starch and sweet things last.</li><li>At dinner, put your fork down between bites.</li><li>Aim for one meal a day that takes 20 minutes.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Plate order kept</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 2: I ate far more than I planned and today feels ruined.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>18</span></div></div></section>
+<section class="page week-page" data-page="19"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 5 of 12 · The Return</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Pantry Rule</h1>
+  <div class="rule-line">If it is in your line of sight, it is in your diet.</div>
+  <div class="why"><p>Food noise is louder when food is visible. Research on food environments keeps finding that people eat more of whatever is in sight and within easy reach, regardless of intentions.</p><p>You cannot out-willpower your own kitchen every evening for the rest of your life. You can rearrange it once.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Do a 15-minute kitchen reset: your loudest foods go out of sight or out of the house.</li><li>Put protein options and fruit at eye level in the fridge.</li><li>Buy treats in single portions, so "having some" has an ending.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Kitchen closed after dinner</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 1: It is late and I am standing at the pantry.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>19</span></div></div></section>
+<section class="page week-page" data-page="20"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 6 of 12 · The Return</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Weekly Average Rule</h1>
+  <div class="rule-line">You read the weekly average, never the single morning.</div>
+  <div class="why"><p>Your weight swings from day to day with water, salt, hormones and how much food is in your system. In the weeks after stopping, simply eating more volume can add a few pounds of water and food weight. A single morning number causes panic; a seven-day average shows the trend.</p><p>People who keep weight off long term commonly check in on it regularly. The point is calm information, not judgment.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>If weighing is healthy for you, weigh under the same conditions each morning.</li><li>On Sunday, average the week and compare it with your Tripwire zones.</li><li>Not weighing? Measure your waist once a week instead.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Weighed, no reaction</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 3: The scale jumped overnight.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>20</span></div></div></section>
+<section class="page " data-page="21"><div class="frame"><div class="body"><div class="kicker">A letter for the end of Week 6</div><h1>Halfway</h1><div class="letter"><p>You are six weeks in. The medication is most likely out of your system by now, the noise has had time to come back, and the plan has stopped being new.</p><p>Here is the honest part: this exact spot, weeks six to eight, is where most attempts like this quietly end. Not with a decision, but with a skipped Sunday page that turns into two. Nobody ever decides to stop. They just stop opening the book.</p><p>So, three things before you turn the page.</p><p><strong>Look at your grids.</strong> Not at what you missed, at what you did. Count the ticks. That number is real, and it is yours.</p><p><strong>Check your zone.</strong> Green? Good, carry on. Yellow? Your plan already says what to do, and doing it is not failing, it is the plan working. Red? Make the call. That is the strong move.</p><p><strong>Lower the bar if you need to.</strong> On a bad week, the floors are enough. Protein first, two short sessions, and the cards when it gets loud. That is still the plan.</p></div><div class="pull">This exact moment is the whole game.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>21</span></div></div></section>
+<section class="page week-page" data-page="22"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 7 of 12 · The Test</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Hungry or Noisy Rule</h1>
+  <div class="rule-line">Before you eat off-plan, ask three questions.</div>
+  <div class="why"><p><strong>1. When did I last eat a floor meal?</strong> If it was more than four or five hours ago, you may simply be hungry. Hungry gets fed, properly, with a real meal.</p><p><strong>2. Would I eat an apple or plain chicken right now?</strong> If yes, it is probably hunger. If only one specific food will do, it is probably noise.</p><p><strong>3. What happened in the last 30 minutes?</strong> Stress, boredom, an argument, an ad: that is noise. Noise gets the ten minutes from Week 3.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Ask the three questions every time you reach for food off-plan.</li><li>Keep a tally this week: how many hungry, how many noisy.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Three questions asked</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 4: I am stressed, bored or sad, and food is the plan.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>22</span></div></div></section>
+<section class="page week-page" data-page="23"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 8 of 12 · The Test</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Liquid Rule</h1>
+  <div class="rule-line">Drinks are decided before you are holding one.</div>
+  <div class="why"><p>Many people drank less alcohol on GLP-1s, and some research suggests these drugs can reduce the desire to drink. When that desire comes back, alcohol adds energy of its own and lowers the guardrails on food at the same time.</p><p>Sugary coffees, juices and sodas count too. Liquid calories tend to fill you up less than the same calories eaten as food.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>On Sunday, write your drink plan for the week: the maximum number of alcoholic drinks, and when.</li><li>Alternate every alcoholic drink with a glass of water.</li><li>Sweet drinks are planned, not reached for.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Drink plan kept</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 6: I am at a party or a buffet and everything is right there.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>23</span></div></div></section>
+<section class="page week-page" data-page="24"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 9 of 12 · The Test</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Sleep Rule</h1>
+  <div class="rule-line">Protect seven hours as if it were prescribed.</div>
+  <div class="why"><p>Research keeps finding that short sleep is linked with more hunger and more eating. In laboratory studies, people who were short of sleep ate noticeably more the next day.</p><p>A tired brain goes looking for quick energy, and the noise is always louder at 11pm than at 9am. Some of your evening cravings are really a bedtime problem.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Keep the same wake-up time all seven days, weekends included.</li><li>Screens down 30 minutes before bed.</li><li>The kitchen closes after dinner; that rule from Week 5 earns its keep this week.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">7 hours in bed</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 1: It is late and I am standing at the pantry.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>24</span></div></div></section>
+<section class="page week-page" data-page="25"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 10 of 12 · The Settle</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span></div></div>
+  <h1>The Social Plate Rule</h1>
+  <div class="rule-line">Decide before you arrive.</div>
+  <div class="why"><p>Restaurants, holidays and family dinners bring big portions, other people's expectations and usually a drink or two, all at the moment your plan is easiest to drop.</p><p>The fix is not avoiding people. It is making the decision at home, where nobody is passing you anything.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Before a meal out, look at the menu and choose your protein.</li><li>Eat a small protein snack before you leave.</li><li>Choose one "worth it" item on purpose, and enjoy every bite of it. Use the scripts in the bonus pages for the people who push.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Plan made before going</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 6: I am at a party or a buffet and everything is right there.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>25</span></div></div></section>
+<section class="page week-page" data-page="26"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 11 of 12 · The Settle</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span></div></div>
+  <h1>The Steps Rule</h1>
+  <div class="rule-line">Move a little all day, not a lot once.</div>
+  <div class="why"><p>The movement you do outside of workouts, such as walking, standing and chores, is a large and underrated share of the energy you use each day. People who keep weight off long term commonly report high levels of everyday activity, much of it walking.</p><p>Some studies also suggest a short walk after a meal helps blunt the rise in blood sugar that follows it.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Hit your step floor from Part 1 each day.</li><li>Take a 10-minute walk after your biggest meal.</li><li>Stand up for one phone call a day.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Walk after biggest meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 10: I have not done any of this for a week.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>26</span></div></div></section>
+<section class="page week-page" data-page="27"><div class="frame"><div class="body">
+  <div class="week-top"><div class="kicker">Week 12 of 12 · The Settle</div><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div></div>
+  <h1>The Keep Rule</h1>
+  <div class="rule-line">Keep what worked. Drop what did not. Write it down.</div>
+  <div class="why"><p>The point was never ninety days of effort. The point is a routine you would happily keep for a year. Look back at your eleven grids: some rules happened almost without effort, and some you fought every week.</p><p>The easy ones are your keepers. The ones you fought are either not for you, or not for you yet. Both answers are useful.</p></div>
+  <div class="move"><div class="label">This week's move</div><ul><li>Read back through your weekly pages and circle the rules that stuck.</li><li>Fill in the Keep Five card at the end of the book.</li><li>Put a monthly check-in in your calendar, and book a follow-up with your prescriber.</li></ul></div>
+  <table class="grid tick">
+    <thead><tr><th class="rowlabel">Each day</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th><th>S</th></tr></thead>
+    <tbody>
+      <tr><td class="rowlabel">Protein floor, every meal</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Keepers chosen</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td></tr>
+      <tr><td class="rowlabel">Food noise peak (0 to 10)</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+    </tbody>
+  </table>
+  <div class="label">What I noticed:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+  <div class="weekly-sum">
+    <div class="fact"><span>Weekly average:</span><div class="line inline short"></div></div>
+    <div class="fact"><span>Zone:</span><span class="zones-pick"><span class="zp"><span class="box"></span> Green</span><span class="zp"><span class="box"></span> Yellow</span><span class="zp"><span class="box"></span> Red</span></span></div>
+  </div>
+  <div class="hard-week"><span class="card-tab">Hard week?</span> Card 8: I am thinking about restarting and I feel like I failed.</div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>27</span></div></div></section>
+<section class="page divider-page" data-page="28"><div class="frame"><div class="body"><div class="divider"><div class="part-label">Part 3</div><div class="part-title">The Food Noise Cards</div>
+   <p class="part-copy">For the moments that do not wait until Sunday. Find the card that matches how you feel right now, do what it says, then note it in the Card Log at the back.</p><ul class="part-list"><li>Card 1: It is late and I am standing at the pantry.</li><li>Card 2: I ate far more than I planned and today feels ruined.</li><li>Card 3: The scale jumped overnight.</li><li>Card 4: I am stressed, bored or sad, and food is the plan.</li><li>Card 5: The food noise is back and it is loud all day.</li><li>Card 6: I am at a party or a buffet and everything is right there.</li><li>Card 7: I hit my Yellow zone.</li><li>Card 8: I am thinking about restarting and I feel like I failed.</li><li>Card 9: I cannot afford it anymore, or my coverage stopped.</li><li>Card 10: I have not done any of this for a week.</li></ul></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>28</span></div></div></section>
+<section class="page cards-page" data-page="29"><div class="frame"><div class="body"><div class="cards">
+  <div class="card">
+    <div class="card-tab">Card 1</div>
+    <div class="card-title">It is late and I am standing at the pantry.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Evening is when willpower is lowest and noise is loudest, especially if you are tired.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"This is the 9pm noise. It always comes and it always goes."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Close the door and move to another room.</li><li>Brush your teeth. It is a strong "eating is over" signal.</li><li>If you are truly hungry, have a planned protein snack, sitting down, on a plate.</li></ol></div>
+  </div>
+  <div class="card">
+    <div class="card-tab">Card 2</div>
+    <div class="card-title">I ate far more than I planned and today feels ruined.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>One big meal does very little to your trend. What does the damage is the "might as well" that comes after it.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"One meal is one meal. The next one is normal."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>No skipping and no punishing. The next meal is a normal floor meal.</li><li>Take a 10-minute walk if you can.</li><li>Tick what you did do today. There was something.</li></ol></div>
+  </div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>29</span></div></div></section>
+<section class="page cards-page" data-page="30"><div class="frame"><div class="body"><div class="cards">
+  <div class="card">
+    <div class="card-tab">Card 3</div>
+    <div class="card-title">The scale jumped overnight.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Water, salt, hormones and digestion can move the scale a few pounds in a day. Fat does not appear overnight.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"That is weather. I read the weekly average."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Write the number down and do not react to it.</li><li>Drink water and eat your floor meals as normal.</li><li>Wait for Sunday's average before deciding anything.</li></ol></div>
+  </div>
+  <div class="card">
+    <div class="card-tab">Card 4</div>
+    <div class="card-title">I am stressed, bored or sad, and food is the plan.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Food is a fast, reliable comfort. The feeling is real; it just is not hunger.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"I am not hungry. I am stressed (or bored, or sad), and I can help that."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Name the actual feeling out loud.</li><li>Pick one non-food reset: a walk, a shower, a call, five minutes outside.</li><li>After that, if you still want it, have a portion on purpose.</li></ol></div>
+  </div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>30</span></div></div></section>
+<section class="page cards-page" data-page="31"><div class="frame"><div class="body"><div class="cards">
+  <div class="card">
+    <div class="card-tab">Card 5</div>
+    <div class="card-title">The food noise is back and it is loud all day.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>This is the Return. It usually peaks in weeks three to six and settles as routines take over.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"Loud does not mean in charge."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Go back to basics: protein first at every meal, no grazing in between.</li><li>Score the noise each day this week so you can see whether it is falling.</li><li>If it is 8 or higher most days for two weeks, that is a Red-zone item: call your prescriber.</li></ol></div>
+  </div>
+  <div class="card">
+    <div class="card-tab">Card 6</div>
+    <div class="card-title">I am at a party or a buffet and everything is right there.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Variety and visibility both increase how much people eat. Buffets combine both.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"I will have the best thing here, not everything here."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Walk the whole table once before you take a plate.</li><li>Protein and vegetables first, then one "worth it" item.</li><li>Stand or sit facing away from the food.</li></ol></div>
+  </div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>31</span></div></div></section>
+<section class="page cards-page" data-page="32"><div class="frame"><div class="body"><div class="cards">
+  <div class="card">
+    <div class="card-tab">Card 7</div>
+    <div class="card-title">I hit my Yellow zone.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>This is the Tripwire working exactly as designed: you caught it early.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"Yellow is a plan, not a verdict."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Open your Tripwire page and follow the Yellow actions for two weeks.</li><li>Log food noise every day.</li><li>Re-check the weekly average in two Sundays. Most Yellows turn Green with the basics.</li></ol></div>
+  </div>
+  <div class="card">
+    <div class="card-tab">Card 8</div>
+    <div class="card-title">I am thinking about restarting and I feel like I failed.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Wanting to restart is common. In one large 2026 analysis, more than half of people with type 2 diabetes who stopped a GLP-1 restarted within a year.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"This is a medical decision, not a moral one."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Read Part 4, The Restart Question.</li><li>Fill in its checklist honestly.</li><li>Book the appointment. Asking the question is not the same as deciding.</li></ol></div>
+  </div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>32</span></div></div></section>
+<section class="page cards-page" data-page="33"><div class="frame"><div class="body"><div class="cards">
+  <div class="card">
+    <div class="card-tab">Card 9</div>
+    <div class="card-title">I cannot afford it anymore, or my coverage stopped.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Losing access is one of the most common reasons people stop. It is a money problem, not a personal failure.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"The medication stopped. The plan did not."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Ask your insurer which criteria changed, and whether an appeal or prior authorization is possible.</li><li>Ask your prescriber about lower-cost options and what follow-up you still need.</li><li>Do the 7-Day Quickstart if you had no taper.</li></ol></div>
+  </div>
+  <div class="card">
+    <div class="card-tab">Card 10</div>
+    <div class="card-title">I have not done any of this for a week.</div>
+    <div class="card-row"><span class="card-k">What is happening</span><span>Gaps happen to everyone. The plan only fails if the gap becomes the new plan.</span></div>
+    <div class="card-row"><span class="card-k">Say this</span><span class="card-say">"No catching up. Just today."</span></div>
+    <div class="card-row"><span class="card-k">Do this now</span><ol><li>Do not restart at Week 1. Open the page for the week you are actually in.</li><li>Do just the floors today: protein first and one short walk.</li><li>Write one line in "What I noticed" about why the gap happened.</li></ol></div>
+  </div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>33</span></div></div></section>
+<section class="page " data-page="34"><div class="frame"><div class="body"><div class="kicker">Part 4</div><h1>The Restart Question</h1><div class="pull top">Restarting is a medical decision, not a moral one.</div><p>Many clinicians now treat obesity as a long-term condition, and compare GLP-1s to blood pressure or cholesterol medicines, which nobody expects you to "graduate" from. Some people keep their results without medication. Some do not. Both are outcomes of biology, not character.</p><p>If you are wondering whether to restart, you do not have to decide alone or decide today. Use this page to get your thoughts in order, and bring it to your prescriber.</p>
+   <h3>Signs it is worth a conversation (tick any that apply)</h3><ul class="checks"><li><span class="box"></span><span>I am in my Red zone, or I have been in Yellow for more than four weeks despite the Yellow actions.</span></li><li><span class="box"></span><span>Food noise has been 8 or higher on most days for two weeks or more.</span></li><li><span class="box"></span><span>My blood sugar, blood pressure or other checks are moving in the wrong direction.</span></li><li><span class="box"></span><span>It is affecting my mood, sleep or how I feel about myself.</span></li></ul>
+   <h3>Questions to bring</h3><ul class="plain"><li>Would a lower maintenance dose be an option for me, rather than my old full dose?</li><li>Would I need to start again at the lowest dose?</li><li>What would this cost me, and does my plan have new requirements to restart?</li><li>If I restart, how should my Off-Ramp plan change?</li></ul>
+   <p class="callout">Whatever you decide, the floors stay. Protein, strength and steps help whether you are on medication or off it.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>34</span></div></div></section>
+<section class="page " data-page="35"><div class="frame"><div class="body"><div class="kicker">Closing the loop</div><h1>Your Day 90 Scores</h1><p>Copy your Day 1 numbers into the first column, then score yourself today. Same measures, same honesty.</p>
+   <table class="grid scores"><thead><tr><th>Measure</th><th>Day 1</th><th>Day 90</th><th>Change</th></tr></thead><tbody><tr><td><strong>Food noise</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td><strong>Confidence I can keep my results</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td><strong>Energy on a normal afternoon</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td><strong>30-second chair stands</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td><strong>Days I hit my protein floor</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td><strong>Waist at the belly button (optional)</strong></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr></tbody></table>
+   <div class="label">Read your Day-1 note to yourself. Then write one back:</div><div class="line "></div><div class="line "></div><div class="line "></div>
+   <p class="callout">Whatever the numbers say, they are yours, measured by you, over ninety days. That is evidence, not enthusiasm.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>35</span></div></div></section>
+<section class="page " data-page="36"><div class="frame"><div class="body"><div class="kicker">Your plan from here</div><h1>The Keep Five</h1><p>Choose the five habits from the last twelve weeks that you will keep for the next twelve months. Choose the ones that felt almost easy. Write them here, then copy them onto a card for the fridge.</p>
+   <div class="keep"><div class="keep-row"><span class="keep-n">1</span><div class="line inline"></div></div><div class="keep-row"><span class="keep-n">2</span><div class="line inline"></div></div><div class="keep-row"><span class="keep-n">3</span><div class="line inline"></div></div><div class="keep-row"><span class="keep-n">4</span><div class="line inline"></div></div><div class="keep-row"><span class="keep-n">5</span><div class="line inline"></div></div></div>
+   <div class="facts"><div class="fact"><span>My monthly check-in day:</span><div class="line inline"></div></div><div class="fact"><span>My Yellow line:</span><div class="line inline"></div></div><div class="fact"><span>My Red line:</span><div class="line inline"></div></div><div class="fact"><span>My prescriber's number:</span><div class="line inline"></div></div><div class="fact"><span>My next appointment:</span><div class="line inline"></div></div></div>
+   <div class="end-catch">The ramp is behind you. The road is yours now.<br><span>Ramp down, not crash down.</span></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>36</span></div></div></section>
+<section class="page divider-page" data-page="37"><div class="frame"><div class="body"><div class="divider"><div class="part-label">The Working Pages</div><div class="part-title">Pages for Month Six</div>
+   <p class="part-copy">Print them, photograph them, stick them on the fridge. These are the pages you will still be using long after the twelve weeks are done.</p><ul class="part-list"><li>The Whole Method on One Page</li><li>The 12-Week Tracker</li><li>Bonus 1: The 7-Day Quickstart</li><li>Bonus 2: The Protein Floor Cheat Sheet</li><li>Bonus 3: The 20-Minute Minimum Session</li><li>Bonus 4: What to Say When</li><li>Bonus 5: The Prescriber Visit Log</li><li>The Card Log</li></ul></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>37</span></div></div></section>
+<section class="page " data-page="38"><div class="frame"><div class="body"><h1>The Whole Method on One Page</h1>
+   <div class="method">
+     <div class="method-col"><div class="label">Setup, once</div><ol><li>Have the Prescriber Conversation.</li><li>Set your Floors: protein, strength, steps.</li><li>Set your Tripwire: Green, Yellow, Red.</li><li>Score Day 1.</li></ol>
+       <div class="label">Every bad day</div><p class="small">No catching up, no compensating, no restarts. Just today.</p></div>
+     <div class="method-col"><div class="label">The twelve rules</div><ol><li><strong>The Floor Rule.</strong> Every meal starts with protein, and the protein gets to your floor before anything else does.</li><li><strong>The Lift Rule.</strong> Twice a week, you lift something heavy enough to notice.</li><li><strong>The Name-It Rule.</strong> When food noise shows up, name it, score it and give it ten minutes.</li><li><strong>The Plate Order Rule.</strong> Protein and vegetables first. Starch last.</li><li><strong>The Pantry Rule.</strong> If it is in your line of sight, it is in your diet.</li><li><strong>The Weekly Average Rule.</strong> You read the weekly average, never the single morning.</li><li><strong>The Hungry or Noisy Rule.</strong> Before you eat off-plan, ask three questions.</li><li><strong>The Liquid Rule.</strong> Drinks are decided before you are holding one.</li><li><strong>The Sleep Rule.</strong> Protect seven hours as if it were prescribed.</li><li><strong>The Social Plate Rule.</strong> Decide before you arrive.</li><li><strong>The Steps Rule.</strong> Move a little all day, not a lot once.</li><li><strong>The Keep Rule.</strong> Keep what worked. Drop what did not. Write it down.</li></ol></div>
+   </div>
+   <p class="small cards-index">Cards: 1 Pantry at night · 2 Ate too much · 3 Scale jumped · 4 Stressed or bored · 5 Noise all day · 6 Party or buffet · 7 Yellow zone · 8 Thinking of restarting · 9 Lost coverage · 10 A week off</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>38</span></div></div></section>
+<section class="page " data-page="39"><div class="frame"><div class="body"><h1>The 12-Week Tracker</h1><p>Fill in one row every Sunday. It is the whole ninety days at a glance, and it fits on a fridge.</p>
+   <table class="grid tracker"><thead><tr><th>Week</th><th>Protein floor days (of 7)</th><th>Strength sessions (of 2)</th><th>Food noise average</th><th>Weekly average</th><th>Zone (G, Y, R)</th></tr></thead>
+   <tbody><tr><td><strong>1</strong> <span class="muted">Floor</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>2</strong> <span class="muted">Lift</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>3</strong> <span class="muted">Name-It</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>4</strong> <span class="muted">Plate Order</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>5</strong> <span class="muted">Pantry</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>6</strong> <span class="muted">Weekly Average</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>7</strong> <span class="muted">Hungry or Noisy</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>8</strong> <span class="muted">Liquid</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>9</strong> <span class="muted">Sleep</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>10</strong> <span class="muted">Social Plate</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>11</strong> <span class="muted">Steps</span></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>12</strong> <span class="muted">Keep</span></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>39</span></div></div></section>
+<section class="page " data-page="40"><div class="frame"><div class="body"><h1>Bonus 1: The 7-Day Quickstart</h1><p>For anyone who stopped suddenly, or is stopping this week and has no time to read. One job a day. Then start Week 1.</p>
+   <table class="grid qs-table"><tbody><tr><td class="day">Day 1</td><td>Score your Day 1 page. Ten minutes, no more.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 2</td><td>Work out your protein floor and write down three meals that reach it.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 3</td><td>Do your first 20-Minute Minimum Session.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 4</td><td>Do the 15-minute kitchen reset from Week 5.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 5</td><td>Book the prescriber appointment and fill in your Tripwire numbers as far as you can.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 6</td><td>Read the Food Noise Cards once, all the way through, so you know where they are.</td><td class="tickcell"><span class="box"></span></td></tr><tr><td class="day">Day 7</td><td>Second strength session, then read the Week 1 page. You are ready.</td><td class="tickcell"><span class="box"></span></td></tr></tbody></table></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>40</span></div></div></section>
+<section class="page " data-page="41"><div class="frame"><div class="body"><h1>Bonus 2: The Protein Floor Cheat Sheet</h1><p class="small">Approximate protein in common portions of cooked or prepared foods. Brands and recipes vary, so when there is a label, the label wins.</p>
+   <table class="grid protein"><thead><tr><th>Food</th><th>Portion</th><th>Protein (g)</th></tr></thead>
+   <tbody><tr><td>Chicken breast, cooked</td><td>4 oz (113 g)</td><td class="numr">35</td></tr><tr><td>Lean ground beef (93%), cooked</td><td>4 oz</td><td class="numr">28</td></tr><tr><td>Shrimp, cooked</td><td>4 oz</td><td class="numr">26</td></tr><tr><td>Salmon, cooked</td><td>4 oz</td><td class="numr">25</td></tr><tr><td>Tuna, canned, drained</td><td>1 can (5 oz)</td><td class="numr">25</td></tr><tr><td>Cottage cheese, low-fat</td><td>1 cup</td><td class="numr">24</td></tr><tr><td>Protein powder</td><td>1 scoop</td><td class="numr">20 to 25</td></tr><tr><td>Greek yogurt, plain, nonfat</td><td>6 oz (170 g)</td><td class="numr">17</td></tr><tr><td>Tempeh</td><td>3 oz</td><td class="numr">16</td></tr><tr><td>Deli turkey breast</td><td>3 oz</td><td class="numr">15</td></tr><tr><td>Ricotta, part-skim</td><td>1/2 cup</td><td class="numr">14</td></tr><tr><td>Egg whites, liquid</td><td>1/2 cup</td><td class="numr">13</td></tr><tr><td>Eggs, large</td><td>2 eggs</td><td class="numr">12</td></tr><tr><td>Tofu, firm</td><td>1/2 cup</td><td class="numr">10 (varies)</td></tr><tr><td>Beef jerky</td><td>1 oz</td><td class="numr">9</td></tr><tr><td>Lentils, cooked</td><td>1/2 cup</td><td class="numr">9</td></tr><tr><td>Edamame, shelled</td><td>1/2 cup</td><td class="numr">9</td></tr><tr><td>Milk</td><td>1 cup</td><td class="numr">8</td></tr><tr><td>Black beans, cooked</td><td>1/2 cup</td><td class="numr">7</td></tr><tr><td>Peanut butter</td><td>2 tbsp</td><td class="numr">7</td></tr><tr><td>String cheese</td><td>1 stick</td><td class="numr">7</td></tr><tr><td>Almonds</td><td>1 oz (about 23)</td><td class="numr">6</td></tr></tbody></table>
+   <div class="label">My three floor breakfasts, lunches and dinners (from Week 1):</div><div class="line tight"></div><div class="line tight"></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>41</span></div></div></section>
+<section class="page " data-page="42"><div class="frame"><div class="body"><h1>Bonus 3: The 20-Minute Minimum Session</h1><p>No gym required. Warm up for three minutes (march on the spot, roll your shoulders), then do two or three rounds of the five moves below, resting as long as you need between them.</p>
+   <table class="grid moves"><thead><tr><th>Move</th><th>Reps</th><th>How</th></tr></thead>
+   <tbody><tr><td><strong>Sit-to-stand</strong></td><td class="nowrap">8 to 12</td><td>Stand up from a sturdy chair and sit back down with control. Easier: use your hands. Harder: hold a weight at your chest.</td></tr><tr><td><strong>Wall or counter push-up</strong></td><td class="nowrap">8 to 12</td><td>Hands on a wall or kitchen counter, body straight, lower your chest and push away. Harder: use a lower surface.</td></tr><tr><td><strong>Glute bridge</strong></td><td class="nowrap">10 to 12</td><td>Lie on your back with knees bent and lift your hips. Seated version: squeeze and hold for five seconds.</td></tr><tr><td><strong>One-arm row</strong></td><td class="nowrap">10 each side</td><td>Lean on a counter and pull a gallon jug, a loaded backpack or a dumbbell toward your ribs.</td></tr><tr><td><strong>Carry</strong></td><td class="nowrap">30 to 40 sec</td><td>Walk holding two heavy grocery bags, shoulders back. Supported version: hold them standing still.</td></tr></tbody></table>
+   <p><strong>The progression rule:</strong> when you can do the top number of repetitions with good form in every round, make it a little harder: a lower surface, a heavier jug or a slower pace on the way down.</p><p class="small">If you have a heart condition, high blood pressure that is not controlled, or a joint problem, check with your clinician first. Stop any movement that causes sharp pain.</p>
+   <div class="label">My session log</div><table class="grid log"><thead><tr><th>Date</th><th>Rounds</th><th>Hardest move</th><th>Make it harder next time?</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>42</span></div></div></section>
+<section class="page " data-page="43"><div class="frame"><div class="body"><h1>Bonus 4: What to Say When</h1><p>The cards handle the noise inside your head. These handle the people outside it. Say them word for word, or make them your own.</p>
+   <div class="script"><div class="script-when">"Were you on Ozempic?"</div><div class="script-say">"I was, with my doctor. Now I'm working on the part nobody talks about: keeping it." Or simply: "That's between me and my doctor."</div></div><div class="script"><div class="script-when">"You're off the shot, so you can have dessert now!"</div><div class="script-say">"I can, and I'll pick when. Not tonight, but thank you."</div></div><div class="script"><div class="script-when">"Have seconds, I made it for you."</div><div class="script-say">"It's so good I want it again tomorrow. Could I take some home?"</div></div><div class="script"><div class="script-when">"Just one drink."</div><div class="script-say">"I'm set with this one," while holding the one you planned.</div></div><div class="script"><div class="script-when">To your partner or housemate</div><div class="script-say">"Here's how you can help this month: keep the snacks in your cupboard, not the shared one, invite me on walks, and please don't comment on my plate."</div></div><div class="script"><div class="script-when">To a rushed prescriber</div><div class="script-say">"Before we finish, I need a plan for what to do if my weight goes up after stopping. Can we set a number together?"</div></div><div class="script"><div class="script-when">To your insurer or pharmacy</div><div class="script-say">"Can you tell me exactly which coverage criteria changed, and whether an appeal or a prior authorization is possible?"</div></div></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>43</span></div></div></section>
+<section class="page log-page visit" data-page="44"><div class="frame"><div class="body"><h1>Bonus 5: The Prescriber Visit Log</h1><p>Bring this to every appointment. Five minutes of notes now saves you from rebuilding the whole story next time.</p><table class="grid log"><thead><tr><th>Date</th><th>Weekly avg</th><th>Noise (0 to 10)</th><th>What we decided</th><th>Next check</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>44</span></div></div></section>
+<section class="page log-page" data-page="45"><div class="frame"><div class="body"><h1>The Card Log</h1><p>Each time you use a Food Noise Card, write a line here. After a few weeks you will see your patterns: the times, the places, the feelings. Patterns you can see are patterns you can plan for.</p><table class="grid log"><thead><tr><th>Date and time</th><th>Card</th><th>Noise before</th><th>Noise after</th><th>What happened</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>45</span></div></div></section>
+<section class="page " data-page="46"><div class="frame"><div class="body"><h1>The Honest Small Print</h1><p>This workbook is general education about habits and routines. It is not medical advice, and it does not replace your prescriber, a registered dietitian, a physical therapist or a mental health professional. Never stop, change or restart a medication because of anything in this book; make those decisions with your clinician.</p><p>Results vary. The research described here reports averages from groups of people, and your experience may be better or worse than those averages. Nothing in this book is a promise of a particular weight or outcome.</p><p>Wegovy, Ozempic, Zepbound and Mounjaro are trademarks of their respective owners. This workbook is independent and is not affiliated with or endorsed by any drug manufacturer.</p>
+   <h3>Free help, any time</h3><table class="grid help"><tbody><tr><td><strong>ANAD eating disorder helpline</strong></td><td>1-888-375-7767 (anad.org)</td></tr><tr><td><strong>988 Suicide &amp; Crisis Lifeline</strong></td><td>Call or text 988 (US)</td></tr><tr><td><strong>Find a registered dietitian</strong></td><td>eatright.org, "Find a Nutrition Expert"</td></tr><tr><td><strong>Emergency</strong></td><td>Call 911 or your local emergency number</td></tr></tbody></table>
+   <p class="callout">Be as patient with yourself as you would be with a friend doing this. Ramp down, not crash down.</p></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>46</span></div></div></section>
+<section class="page " data-page="47"><div class="frame"><div class="body"><h1>Sources and Further Reading</h1><p>The studies behind the main claims in this book, for the curious and for your prescriber.</p><ol class="sources"><li>Wilding JPH, et al. Weight regain and cardiometabolic effects after withdrawal of semaglutide: the STEP 1 trial extension. <em>Diabetes, Obesity and Metabolism</em>, 2022.</li><li>Aronne LJ, et al. Continued treatment with tirzepatide for maintenance of weight reduction in adults with obesity: the SURMOUNT-4 randomized clinical trial. <em>JAMA</em>, 2024.</li><li>GLP-1 discontinuation and restart in type 2 diabetes, Komodo Health claims analysis presented at ENDO 2026, as reported by <em>Healio</em> and <em>U.S. Pharmacist</em>, 2026.</li><li>High discontinuation rates of GLP-1 receptor agonists among patients with obesity, as reported by <em>News-Medical</em>, February 2025.</li><li>Stevens J, et al. The definition of weight maintenance. <em>International Journal of Obesity</em>, 2006.</li><li>Wing RR, Phelan S. Long-term weight loss maintenance. <em>American Journal of Clinical Nutrition</em>, 2005.</li><li>Shukla AP, et al. Food order has a significant impact on postprandial glucose and insulin levels. <em>Diabetes Care</em>, 2015.</li><li>Al Khatib HK, et al. The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis. <em>European Journal of Clinical Nutrition</em>, 2017.</li><li>Centers for Disease Control and Prevention. STEADI: 30-Second Chair Stand assessment.</li></ol></div><div class="foot"><span>THE OFF-RAMP · 90 DAYS AFTER GLP-1s</span><span>47</span></div></div></section>
+</body></html>
