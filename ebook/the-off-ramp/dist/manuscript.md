@@ -103,7 +103,7 @@ This week's move:
 - Choose three breakfasts, three lunches and three dinners that reach your per-meal floor. Write them on the Protein Floor Cheat Sheet.
 - At every meal, eat the protein part first.
 - Shop for those nine meals this week, so the floor is the easy option.
-Tracked daily: protein floor, Protein eaten first, food noise peak.
+Tracked daily: protein floor, protein eaten first, food noise peak.
 
 ### Week 2 (The Coast): The Lift Rule
 **Twice a week, you lift something heavy enough to notice.**
@@ -113,7 +113,7 @@ This week's move:
 - Put two 20-minute sessions in your calendar like appointments.
 - Do the 20-Minute Minimum Session from the bonus pages.
 - Redo your chair-stand count at the end of the week and write it below.
-Tracked daily: protein floor, Strength session, food noise peak.
+Tracked daily: protein floor, strength session, food noise peak.
 
 ### Week 3 (The Return): The Name-It Rule
 **When food noise shows up, name it, score it and give it ten minutes.**
@@ -123,7 +123,7 @@ This week's move:
 - When a food thought arrives outside a planned meal, say "that is noise" and score it from 0 to 10.
 - Set a 10-minute timer and give your hands something to do.
 - When it rings, decide on purpose. Sometimes the answer is yes, and that is fine.
-Tracked daily: protein floor, Noise named + 10 min, food noise peak.
+Tracked daily: protein floor, noise named + 10 min, food noise peak.
 
 ### Week 4 (The Return): The Plate Order Rule
 **Protein and vegetables first. Starch last.**
@@ -133,7 +133,7 @@ This week's move:
 - At every meal: protein and vegetables first, starch and sweet things last.
 - At dinner, put your fork down between bites.
 - Aim for one meal a day that takes 20 minutes.
-Tracked daily: protein floor, Plate order kept, food noise peak.
+Tracked daily: protein floor, plate order kept, food noise peak.
 
 ### Week 5 (The Return): The Pantry Rule
 **If it is in your line of sight, it is in your diet.**
@@ -143,7 +143,7 @@ This week's move:
 - Do a 15-minute kitchen reset: your loudest foods go out of sight or out of the house.
 - Put protein options and fruit at eye level in the fridge.
 - Buy treats in single portions, so "having some" has an ending.
-Tracked daily: protein floor, Kitchen closed after dinner, food noise peak.
+Tracked daily: protein floor, kitchen closed after dinner, food noise peak.
 
 ### Week 6 (The Return): The Weekly Average Rule
 **You read the weekly average, never the single morning.**
@@ -153,7 +153,7 @@ This week's move:
 - If weighing is healthy for you, weigh under the same conditions each morning.
 - On Sunday, average the week and compare it with your Tripwire zones.
 - Not weighing? Measure your waist once a week instead.
-Tracked daily: protein floor, Weighed, no reaction, food noise peak.
+Tracked daily: protein floor, weighed, no reaction, food noise peak.
 
 ### Halfway
 You are six weeks in. The medication is most likely out of your system by now, the noise has had time to come back, and the plan has stopped being new.
@@ -172,7 +172,7 @@ So, three things before you turn the page.
 This week's move:
 - Ask the three questions every time you reach for food off-plan.
 - Keep a tally this week: how many hungry, how many noisy.
-Tracked daily: protein floor, Three questions asked, food noise peak.
+Tracked daily: protein floor, three questions asked, food noise peak.
 
 ### Week 8 (The Test): The Liquid Rule
 **Drinks are decided before you are holding one.**
@@ -182,7 +182,7 @@ This week's move:
 - On Sunday, write your drink plan for the week: the maximum number of alcoholic drinks, and when.
 - Alternate every alcoholic drink with a glass of water.
 - Sweet drinks are planned, not reached for.
-Tracked daily: protein floor, Drink plan kept, food noise peak.
+Tracked daily: protein floor, drink plan kept, food noise peak.
 
 ### Week 9 (The Test): The Sleep Rule
 **Protect seven hours as if it were prescribed.**
@@ -202,7 +202,7 @@ This week's move:
 - Before a meal out, look at the menu and choose your protein.
 - Eat a small protein snack before you leave.
 - Choose one "worth it" item on purpose, and enjoy every bite of it. Use the scripts in the bonus pages for the people who push.
-Tracked daily: protein floor, Plan made before going, food noise peak.
+Tracked daily: protein floor, plan made before going, food noise peak.
 
 ### Week 11 (The Settle): The Steps Rule
 **Move a little all day, not a lot once.**
@@ -212,7 +212,7 @@ This week's move:
 - Hit your step floor from Part 1 each day.
 - Take a 10-minute walk after your biggest meal.
 - Stand up for one phone call a day.
-Tracked daily: protein floor, Walk after biggest meal, food noise peak.
+Tracked daily: protein floor, walk after biggest meal, food noise peak.
 
 ### Week 12 (The Settle): The Keep Rule
 **Keep what worked. Drop what did not. Write it down.**
@@ -222,7 +222,7 @@ This week's move:
 - Read back through your weekly pages and circle the rules that stuck.
 - Fill in the Keep Five card at the end of the book.
 - Put a monthly check-in in your calendar, and book a follow-up with your prescriber.
-Tracked daily: protein floor, Keepers chosen, food noise peak.
+Tracked daily: protein floor, keepers chosen, food noise peak.
 
 ## Part 3: The Food Noise Cards
 For the moments that do not wait until Sunday. Find the card that matches how you feel right now, do what it says, then note it in the Card Log at the back.
@@ -364,7 +364,7 @@ Approximate protein in common portions of cooked or prepared foods. Brands and r
 | Almonds | 1 oz (about 23) | 6 |
 
 ## Bonus 3: The 20-Minute Minimum Session
-No gym required. Warm up for three minutes (march on the spot, roll your shoulders), then do two or three rounds of the five moves below, resting as long as you need between them.
+No gym required. Warm up for three minutes (march in place, roll your shoulders), then do two or three rounds of the five moves below, resting as long as you need between them.
 - **Sit-to-stand** (8 to 12): Stand up from a sturdy chair and sit back down with control. Easier: use your hands. Harder: hold a weight at your chest.
 - **Wall or counter push-up** (8 to 12): Hands on a wall or kitchen counter, body straight, lower your chest and push away. Harder: use a lower surface.
 - **Glute bridge** (10 to 12): Lie on your back with knees bent and lift your hips. Seated version: squeeze and hold for five seconds.
@@ -379,7 +379,7 @@ The cards handle the noise inside your head. These handle the people outside it.
 - **"You're off the shot, so you can have dessert now!"** "I can, and I'll pick when. Not tonight, but thank you."
 - **"Have seconds, I made it for you."** "It's so good I want it again tomorrow. Could I take some home?"
 - **"Just one drink."** "I'm set with this one," while holding the one you planned.
-- **To your partner or housemate** "Here's how you can help this month: keep the snacks in your cupboard, not the shared one, invite me on walks, and please don't comment on my plate."
+- **To your partner or roommate** "Here's how you can help this month: keep the snacks in your cupboard, not the shared one, invite me on walks, and please don't comment on my plate."
 - **To a rushed prescriber** "Before we finish, I need a plan for what to do if my weight goes up after stopping. Can we set a number together?"
 - **To your insurer or pharmacy** "Can you tell me exactly which coverage criteria changed, and whether an appeal or a prior authorization is possible?"
 

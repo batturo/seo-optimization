@@ -632,7 +632,7 @@ export const protein = {
 
 export const session = {
   title: 'Bonus 3: The 20-Minute Minimum Session',
-  intro: 'No gym required. Warm up for three minutes (march on the spot, roll your shoulders), then do two or three rounds of the five moves below, resting as long as you need between them.',
+  intro: 'No gym required. Warm up for three minutes (march in place, roll your shoulders), then do two or three rounds of the five moves below, resting as long as you need between them.',
   moves: [
     ['Sit-to-stand', '8 to 12', 'Stand up from a sturdy chair and sit back down with control. Easier: use your hands. Harder: hold a weight at your chest.'],
     ['Wall or counter push-up', '8 to 12', 'Hands on a wall or kitchen counter, body straight, lower your chest and push away. Harder: use a lower surface.'],
@@ -652,7 +652,7 @@ export const scripts = {
     ['"You\'re off the shot, so you can have dessert now!"', '"I can, and I\'ll pick when. Not tonight, but thank you."'],
     ['"Have seconds, I made it for you."', '"It\'s so good I want it again tomorrow. Could I take some home?"'],
     ['"Just one drink."', '"I\'m set with this one," while holding the one you planned.'],
-    ['To your partner or housemate', '"Here\'s how you can help this month: keep the snacks in your cupboard, not the shared one, invite me on walks, and please don\'t comment on my plate."'],
+    ['To your partner or roommate', '"Here\'s how you can help this month: keep the snacks in your cupboard, not the shared one, invite me on walks, and please don\'t comment on my plate."'],
     ['To a rushed prescriber', '"Before we finish, I need a plan for what to do if my weight goes up after stopping. Can we set a number together?"'],
     ['To your insurer or pharmacy', '"Can you tell me exactly which coverage criteria changed, and whether an appeal or a prior authorization is possible?"'],
   ],

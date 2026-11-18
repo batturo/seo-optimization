@@ -481,7 +481,7 @@ push(`### ${f.title}`, f.intro, `**${f.protein.h}.** ${f.protein.t}`, ...f.prote
 push(`### ${t.title}`, t.intro, ...t.zones.map((z) => `- **${z.name}:** ${z.cond}. ${z.act}`), t.hint);
 push(`## ${C.part2.label}: ${C.part2.title}`, C.part2.copy);
 for (const w of C.weeks) {
-  push(`### Week ${w.n} (${w.phase}): ${w.name}`, `**${w.rule}**`, ...w.why, 'This week\'s move:', ...w.move.map((m) => `- ${m}`), `Tracked daily: protein floor, ${w.track}, food noise peak.`);
+  push(`### Week ${w.n} (${w.phase}): ${w.name}`, `**${w.rule}**`, ...w.why, 'This week\'s move:', ...w.move.map((m) => `- ${m}`), `Tracked daily: protein floor, ${w.track.toLowerCase()}, food noise peak.`);
   if (w.n === 6) push(`### ${C.midpoint.title}`, ...C.midpoint.paras, `*${C.midpoint.pull}*`);
 }
 push(`## ${C.part3.label}: ${C.part3.title}`, C.part3.copy);
